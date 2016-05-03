@@ -1,0 +1,28 @@
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+}
+
+#landing {
+  background-image: url("port_bg_image.jpeg");
+  background-repeat: no-repeat;
+  height: 458px;
+  width: 100vw;
+  margin-top: 0px;
+}
+
+nav {
+	float: right;
+	margin-top: 25px;
+	font-size: 25px;
+}
+
+.navlink {
+	padding-right: 20px;
+}
+
+#headertitle {
+	clear: both;
+	font-size: 50px;
+}
