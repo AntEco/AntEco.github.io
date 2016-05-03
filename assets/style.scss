@@ -5,24 +5,46 @@ body {
 }
 
 #landing {
-  background-image: url("port_bg_image.jpeg");
-  background-repeat: no-repeat;
-  height: 458px;
-  width: 100vw;
-  margin-top: 0px;
+	background-image: url("port_bg_image.jpeg");
+	background-repeat: no-repeat;
+	height: 458px;
+	width: 100vw;
+  	top: 0;
+	left: 0;
+	position: absolute;
+	z-index: -1;
 }
 
 nav {
-	float: right;
+	top: 0;
+	left: 0;
 	margin-top: 25px;
+	margin-right: 25px;
 	font-size: 25px;
+	position: fixed;
+	width: 100%;
+	float: right;
+	text-align: right;
+}
+
+#logo {
+	float: left;
+	margin-left: 40px;
 }
 
 .navlink {
-	padding-right: 20px;
+	padding-right: 50px;
+
 }
 
 #headertitle {
 	clear: both;
 	font-size: 50px;
+	color: white;
+	position: fixed;
+	text-align: center;
+}
+
+#placeholder {
+	margin-top: 458px;
 }
