@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-	var topOfOthDiv = $("#changePoint").offset().top;
+	var topOfOthDiv = $("#changePoint").top;
 
 	function parallaxbg(){
     var scrolled = $(window).scrollTop()
@@ -12,7 +12,7 @@ $(document).ready(function() {
 
     if($(window).scrollTop() > topOfOthDiv) {
 
- 		$("#nav").css("background-color:black;"); //reached the desired point -- show div
+ 		$("#nav").css("background-color", "black"); //reached the desired point -- show div
         }
 
 	})
