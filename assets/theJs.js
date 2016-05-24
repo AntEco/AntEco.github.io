@@ -2,7 +2,7 @@ $(document).ready(function() {
 
 	function parallaxbg(){
     var scrolled = $(window).scrollTop()
-	$("#headertitle").css("top", -(scrolled *1.35) +"px")
+	$("#headertitle").css("top", -(scrolled * .5) +"px")
 	}
 
 	$(window).scroll(function(){
@@ -27,7 +27,7 @@ $(document).ready(function() {
      	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       	if (target.length) {
         $('html, body').animate({
-          scrollTop: (target.offset().top - 75)
+          scrollTop: (target.offset().top - 55)
         }, 1000);
         return false;
       	}

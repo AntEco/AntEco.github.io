@@ -2,17 +2,20 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
+	font-family: 'Work Sans', sans-serif;
 }
 
 #landing {
-	background-image: url("port_bg_image.jpeg");
+	background-image: url("background.jpg");
 	background-repeat: no-repeat;
-	height: 458px;
+	height: 555px;
 	width: 100vw;
   	top: 0;
 	left: 0;
 	position: absolute;
 	z-index: -1;
+	border-bottom: 2px solid black;
+	box-shadow: 10px 10px 5px #888888
 }
 
 nav {
@@ -20,12 +23,13 @@ nav {
 	left: 0;
 	padding-top: 25px;
 	padding-bottom: 25px;
-	margin-right: 25px;
-	font-size: 25px;
+	// margin-right: 25px;
+	font-size: 40px;
 	position: fixed;
 	width: 100%;
 	float: right;
 	text-align: right;
+	font-weight: 1800;
 }
 
 nav.changeNav {
@@ -33,21 +37,32 @@ nav.changeNav {
 	padding-top: 10px;
 	padding-bottom: 10px;
 	font-size: 20px;
+	border-bottom: 2px solid black;
+	box-shadow: 10px 5px 5px #888888;
+	
+	a:hover {
+		background-color: black;
+	}
 }
 
 #logo {
 	float: left;
 	margin-left: 40px;
-}
-
-#titleWords {
-	width: 75%;
-	padding-top: 50px;
-	margin: 0 auto;
+	a {
+		color: white;
+		text-decoration: none;
+	   -webkit-text-stroke-width: 1px;
+	   -webkit-text-stroke-color: black;
+	}
 }
 
 .navlink {
 	padding-right: 50px;
+	color: white;
+	text-decoration: none;
+	// -webkit-text-fill-color: white; /* Will override color (regardless of order) */
+	// -webkit-text-stroke-width: 1px;
+	// -webkit-text-stroke-color: black;
 
 }
 
@@ -55,12 +70,16 @@ nav.changeNav {
 	clear: both;
 	font-size: 50px;
 	color: white;
-	position: fixed;
+	position: absolute;
 	text-align: center;
+	padding-top: 250px;
+	display: block;
+	margin: 0 auto;
+	width: 100%;
 }
 
 #placeholder {
-	margin-top: 458px;
+	margin-top: 555px;
 }
 
 #changePoint {
@@ -69,4 +88,19 @@ nav.changeNav {
 
 #about {
 	clear: both;
+}
+
+#projects {
+	clear: both;
+}
+
+br {
+	display: block;
+	height: 10px 0;
+}
+
+#languages, #myInfo {
+	text-align: center;
+	float: left;
+	width: 48%;
 }
