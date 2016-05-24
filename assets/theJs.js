@@ -1,7 +1,5 @@
 $(document).ready(function() {
 
-	var topOfOthDiv = $("#changePoint").top;
-
 	function parallaxbg(){
     var scrolled = $(window).scrollTop()
 	$("#headertitle").css("top", -(scrolled *1.35) +"px")
@@ -10,13 +8,17 @@ $(document).ready(function() {
 	$(window).scroll(function(){
     parallaxbg();
 
-    if($(window).scrollTop() > topOfOthDiv) {
+    var header = $("#changePoint");
+	var headerPosition = header.position();
+	var navHeight = $("nav").height;
 
- 		$("#nav").css("background-color", "black"); //reached the desired point -- show div
-        }
+    if ($(window).scrollTop() > headerPosition.top){
+			$("nav").css("background-color", "black");
+		}
+		if ($(window).scrollTop() < headerPosition.top){
+			$("nav").css("background-color", "transparent");
+		}
 
 	})
-
-
 	
 })
