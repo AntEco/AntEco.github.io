@@ -8,17 +8,30 @@ $(document).ready(function() {
 	$(window).scroll(function(){
     parallaxbg();
 
-    var header = $("#changePoint");
-	var headerPosition = header.position();
-	var navHeight = $("nav").height;
+    var $el = $('#landing');  //record the elem so you don't crawl the DOM everytime  
+	var bottom = $el.position().top + $el.outerHeight(true);
 
-    if ($(window).scrollTop() > headerPosition.top){
-			$("nav").css("background-color", "black");
+    if (($(window).scrollTop() + 48) > bottom){
+			$("nav").addClass("changeNav");
 		}
-		if ($(window).scrollTop() < headerPosition.top){
-			$("nav").css("background-color", "transparent");
+		if (($(window).scrollTop() + 48) < bottom){
+			$("nav").removeClass("changeNav");
 		}
 
-	})
-	
+	});
+
+	$(function() {
+  		$('a[href*="#"]:not([href="#"])').click(function() {
+    		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      	var target = $(this.hash);
+     	target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      	if (target.length) {
+        $('html, body').animate({
+          scrollTop: (target.offset().top - 75)
+        }, 1000);
+        return false;
+      	}
+    	}
+  	});
+	});
 })

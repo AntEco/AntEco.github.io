@@ -16,7 +16,8 @@ body {
 nav {
   top: 0;
   left: 0;
-  margin-top: 25px;
+  padding-top: 25px;
+  padding-bottom: 25px;
   margin-right: 25px;
   font-size: 25px;
   position: fixed;
@@ -24,9 +25,20 @@ nav {
   float: right;
   text-align: right; }
 
+nav.changeNav {
+  background-color: green;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 20px; }
+
 #logo {
   float: left;
   margin-left: 40px; }
+
+#titleWords {
+  width: 75%;
+  padding-top: 50px;
+  margin: 0 auto; }
 
 .navlink {
   padding-right: 50px; }
@@ -40,5 +52,11 @@ nav {
 
 #placeholder {
   margin-top: 458px; }
+
+#changePoint {
+  height: 80px; }
+
+#about {
+  clear: both; }
 
 /*# sourceMappingURL=style.css.map */
