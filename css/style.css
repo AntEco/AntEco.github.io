@@ -20,7 +20,6 @@ nav {
   top: 0;
   left: 0;
   padding-top: 25px;
-  padding-bottom: 25px;
   font-size: 40px;
   position: fixed;
   width: 100%;
@@ -70,9 +69,6 @@ nav.changeNav {
 #placeholder {
   margin-top: 555px; }
 
-#changePoint {
-  height: 80px; }
-
 #about {
   clear: both; }
 
@@ -88,9 +84,11 @@ br {
   float: left;
   width: 48%; }
 
+#languages .languageImage:hover {
+  transform: scale(1.2, 1.2);
+  z-index: 1; }
 #languages img {
-  float: left;
-  padding-left: 40px;
-  padding-right: 40px; }
+  display: inline-block;
+  padding-top: 15px; }
 
 /*# sourceMappingURL=style.css.map */

@@ -22,7 +22,7 @@ nav {
 	top: 0;
 	left: 0;
 	padding-top: 25px;
-	padding-bottom: 25px;
+	// padding-bottom: 25px;
 	// margin-right: 25px;
 	font-size: 40px;
 	position: fixed;
@@ -87,10 +87,6 @@ nav.changeNav {
 	margin-top: 555px;
 }
 
-#changePoint {
-	height: 80px;
-}
-
 #about {
 	clear: both;
 }
@@ -111,9 +107,14 @@ br {
 }
 
 #languages {
+	.languageImage:hover {
+	transform: scale(1.2, 1.2);
+	z-index: 1;
+	}
+
 	img {
-		float: left;
-		padding-left: 40px;
-		padding-right: 40px;
+		// float: left;
+		display: inline-block;
+		padding-top: 15px;
 	}
 }
