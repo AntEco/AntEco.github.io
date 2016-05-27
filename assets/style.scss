@@ -123,3 +123,21 @@ br {
 		padding-top: 15px;
 	}
 }
+
+#fairFare {
+	background-color: gray;
+	color: white;
+}
+
+#ffCarousel {
+	padding-left: 60px;
+
+	.single-item {
+		padding: 15px 0 15px 0;
+		width: 25%;
+
+		.fairfimage {
+			padding-left: 20px;
+		}
+	}
+}
