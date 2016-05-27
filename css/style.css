@@ -35,7 +35,8 @@ nav.changeNav {
   padding-bottom: 10px;
   font-size: 20px;
   border-bottom: 2px solid black;
-  box-shadow: 10px 5px 5px #888888; }
+  box-shadow: 10px 5px 5px #888888;
+  z-index: 1; }
   nav.changeNav a {
     color: white; }
   nav.changeNav a:hover {
@@ -74,6 +75,9 @@ nav.changeNav {
 
 #projects {
   clear: both; }
+  #projects img {
+    height: 437px;
+    width: 254px; }
 
 br {
   display: block;
@@ -86,7 +90,7 @@ br {
 
 #languages .languageImage:hover {
   transform: scale(1.2, 1.2);
-  z-index: 1; }
+  z-index: -1; }
 #languages img {
   display: inline-block;
   padding-top: 15px; }

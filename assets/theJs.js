@@ -1,5 +1,13 @@
 $(document).ready(function() {
 
+	$('.single-item').slick({
+		dots: true,
+		variableWidth: true,
+  		slidesToShow: 1,
+  		fade: true,
+  		centerMode: true
+  	});
+
 	function parallaxbg(){
     var scrolled = $(window).scrollTop()
 	$("#headertitle").css("top", -(scrolled * .5) +"px")
@@ -34,4 +42,6 @@ $(document).ready(function() {
     	}
   	});
 	});
+
+	$('.single-item').slick();
 })
