@@ -1,0 +1,21 @@
+<div id="nav">
+    <h1>Fair<span style="color:#FC21BD">Fare</span></h1>
+</div>
+<div class="container">
+    <div id="row">
+      <br>
+        <%= form_tag("/tables", method: "get", remote: true) do %>
+           <%= text_field_tag :start, nil, :placeholder => 'Starting Location' %><br>
+           <%= text_field_tag :endloc, nil, :placeholder => 'Destination' %><br>
+           <%= submit_tag "Find My Fare", :id => 'submit_button' %>
+       <% end %>
+        <div id="error"></div>
+    </div>
+    <div id="loading">
+        <%= image_tag "loading.gif" %>
+    </div>
+
+    <%= @key1 %>
+
+    <br>
+    <div id="tables"></div>
