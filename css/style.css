@@ -4,17 +4,33 @@ body {
   margin: 0;
   font-family: 'Work Sans', sans-serif; }
 
+#headerContainer {
+  float: left; }
+
 #landing {
-  background-image: url("background.jpg");
   background-repeat: no-repeat;
-  height: 555px;
   width: 100vw;
   top: 0;
   left: 0;
-  position: absolute;
   z-index: -1;
   border-bottom: 2px solid black;
   box-shadow: 10px 10px 5px #888888; }
+
+#about {
+  clear: both; }
+
+#headertitle {
+  color: transparent;
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  font-size: 75px; }
+
+.fillWidth {
+  width: 100%;
+  top: 0;
+  margin: 0;
+  padding-top: 0;
+  z-index: -1000; }
 
 nav {
   top: 0;
@@ -65,23 +81,14 @@ nav.changeNav {
   padding-top: 250px;
   display: block;
   margin: 0 auto;
-  width: 100%; }
-
-#placeholder {
-  margin-top: 555px; }
-
-#about {
-  clear: both; }
+  width: 100%;
+  z-index: 100; }
 
 #projects {
   clear: both; }
   #projects img {
     height: 437px;
     width: 254px; }
-
-br {
-  display: block;
-  height: 10px 0; }
 
 #languages, #myInfo {
   text-align: center;
@@ -94,6 +101,9 @@ br {
 #languages img {
   display: inline-block;
   padding-top: 15px; }
+
+#myInfo {
+  background-color: darkgray; }
 
 #fairFare {
   background-color: gray;
