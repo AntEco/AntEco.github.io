@@ -42,4 +42,10 @@ $(document).ready(function() {
   		centerMode: true,
   		speed: 1000
   	});
+
+  var aboutHeight = $('#languages').height;
+
+    $("#myInfo").height == aboutHeight;
+  
+
 })

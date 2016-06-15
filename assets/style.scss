@@ -1,8 +1,14 @@
+@font-face {
+	font-family: Bonn;
+	src: url(LumberjackInlineRough.otf)
+}
+
 body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	font-family: 'Work Sans', sans-serif;
+	font-family: 'Bonn';
+	// font-family: 'Work Sans', sans-serif;
 }
 
 #landing {
@@ -50,9 +56,9 @@ nav {
 
 nav.changeNav {
 	background-color: #ff4c4c;
-	padding-top: 10px;
-	padding-bottom: 10px;
-	font-size: 20px;
+	padding-top: 12px;
+	padding-bottom: 12px;
+	font-size: 25px;
 	border-bottom: 2px solid black;
 	box-shadow: 10px 5px 5px #888888;
 	z-index: 1000;
@@ -100,14 +106,7 @@ nav.changeNav {
 #about {
 	margin-top: -5px;
 	width: 100%;
-}
-
-#projects {
-	clear: both;
-	img {
-		height: 437px;
-		width: 254px;
-	}
+	height: auto;
 }
 
 #languages, #myInfo {
@@ -121,6 +120,8 @@ nav.changeNav {
 	-moz-box-sizing: border-box;
 	box-sizing: border-box; 
 	padding: 0 25px 0 25px;	
+	height: 100%;
+	background-color: darkgray;
 }
 
 #languages {
@@ -136,11 +137,29 @@ nav.changeNav {
 	}
 }
 
-#myInfo {
-	background-color: darkgray;
+
+#projects {
+
+	clear: both;
+	img {
+		height: 437px;
+		width: 254px;
+	}
+}
+
+#projectHeader {
+	width: 100%;
+	text-align: center;
+	color: white;
+	background-color: black;
+	padding: 5px 0 5px 0;
+	margin-bottom: 0;
 }
 
 #fairFare {
+	h2 {
+		margin-top: 0;
+	}
 	background-color: gray;
 	color: white;
 }

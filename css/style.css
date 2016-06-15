@@ -1,8 +1,11 @@
+@font-face {
+  font-family: Bonn;
+  src: url(LumberjackInlineRough.otf); }
 body {
   height: 100%;
   width: 100%;
   margin: 0;
-  font-family: 'Work Sans', sans-serif; }
+  font-family: 'Bonn'; }
 
 #landing {
   background-repeat: no-repeat;
@@ -39,9 +42,9 @@ nav {
 
 nav.changeNav {
   background-color: #ff4c4c;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  font-size: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  font-size: 25px;
   border-bottom: 2px solid black;
   box-shadow: 10px 5px 5px #888888;
   z-index: 1000; }
@@ -78,13 +81,8 @@ nav.changeNav {
 
 #about {
   margin-top: -5px;
-  width: 100%; }
-
-#projects {
-  clear: both; }
-  #projects img {
-    height: 437px;
-    width: 254px; }
+  width: 100%;
+  height: auto; }
 
 #languages, #myInfo {
   text-align: center;
@@ -95,7 +93,9 @@ nav.changeNav {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  padding: 0 25px 0 25px; }
+  padding: 0 25px 0 25px;
+  height: 100%;
+  background-color: darkgray; }
 
 #languages .languageImage:hover {
   transform: scale(1.2, 1.2);
@@ -104,12 +104,25 @@ nav.changeNav {
   display: inline-block;
   padding-top: 15px; }
 
-#myInfo {
-  background-color: darkgray; }
+#projects {
+  clear: both; }
+  #projects img {
+    height: 437px;
+    width: 254px; }
+
+#projectHeader {
+  width: 100%;
+  text-align: center;
+  color: white;
+  background-color: black;
+  padding: 5px 0 5px 0;
+  margin-bottom: 0; }
 
 #fairFare {
   background-color: gray;
   color: white; }
+  #fairFare h2 {
+    margin-top: 0; }
 
 #ffCarousel {
   padding-left: 60px; }
