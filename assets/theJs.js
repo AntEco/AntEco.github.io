@@ -8,13 +8,13 @@ $(document).ready(function() {
 	$(window).scroll(function(){
     parallaxbg();
 
-    var $el = $('#landing');  //record the elem so you don't crawl the DOM everytime  
-	var bottom = $el.position().top + $el.outerHeight(true);
+   var $el = $('#landing');  //record the elem so you don't crawl the DOM everytime  
+	 var bottom = $el.position().top + $el.outerHeight(true);
 
-    if (($(window).scrollTop() + 48) > bottom){
+   if (($(window).scrollTop() + 65) > bottom){
 			$("nav").addClass("changeNav");
 		}
-		if (($(window).scrollTop() + 48) < bottom){
+		if (($(window).scrollTop() + 65) < bottom){
 			$("nav").removeClass("changeNav");
 		}
 
