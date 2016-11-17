@@ -40,7 +40,7 @@ $(document).ready(function() {
   		slidesToShow: 1,
   		fade: true,
   		centerMode: true,
-  		speed: 1000
+  		speed: 2000
   	});
 
   var aboutHeight = $('#languages').height;

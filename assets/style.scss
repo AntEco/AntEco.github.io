@@ -1,5 +1,5 @@
 @font-face {
-	font-family: Bonn;
+	font-family: lumberjack;
 	src: url(LumberjackInlineRough.otf)
 }
 
@@ -7,7 +7,7 @@ body {
 	height: 100%;
 	width: 100%;
 	margin: 0;
-	font-family: 'Bonn';
+	font-family: 'lumberjack';
 	// font-family: 'Work Sans', sans-serif;
 }
 
@@ -55,7 +55,7 @@ nav {
 }
 
 nav.changeNav {
-	background-color: #ff4c4c;
+	background-color: black;
 	padding-top: 12px;
 	padding-bottom: 12px;
 	font-size: 25px;
@@ -64,11 +64,11 @@ nav.changeNav {
 	z-index: 1000;
 
 	a {
-		color: white;
+		color: #ff4c4c;
 	}
 	
 	a:hover {
-		color: black;
+		color: white;
 	}
 }
 
@@ -106,7 +106,8 @@ nav.changeNav {
 #about {
 	margin-top: -5px;
 	width: 100%;
-	height: auto;
+	border-top: 4px solid black;
+	font-size: 17px;
 }
 
 #languages, #myInfo {
@@ -116,18 +117,22 @@ nav.changeNav {
 }
 
 #myInfo {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
+	//-webkit-box-sizing: border-box;
+	//-moz-box-sizing: border-box;
 	box-sizing: border-box; 
-	padding: 0 25px 0 25px;	
+	padding: 0 25px 0 25px;
+	margin: 0;
 	height: 100%;
 	background-color: darkgray;
 }
 
 #languages {
+	.languageImage {
+		transform: scale(.9, .9);
+	}
 	.languageImage:hover {
-	transform: scale(1.2, 1.2);
-	z-index: -1;
+		transform: scale(1.1, 1.1);
+		z-index: -1;
 	}
 
 	img {
