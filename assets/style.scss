@@ -309,7 +309,12 @@ nav {
 }
 
 #myPortfolio {
+	background-color: black;
+	height: 100%;
 	iframe {
-		width: 100%;
+		margin: 0 auto;
+		width: 60vw;
+		height: 80vh;
+
 	}
 }

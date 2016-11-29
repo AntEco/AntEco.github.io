@@ -268,7 +268,12 @@ nav {
   background-position: center;
   background-color: black; }
 
-#myPortfolio iframe {
-  width: 100%; }
+#myPortfolio {
+  background-color: black;
+  height: 100%; }
+  #myPortfolio iframe {
+    margin: 0 auto;
+    width: 60vw;
+    height: 80vh; }
 
 /*# sourceMappingURL=style.css.map */
