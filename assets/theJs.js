@@ -71,6 +71,15 @@ $("#nextArrow").click(function(){
   plusDivs(1)
 });
 
+// $('.carousel').slick({
+
+//   dots: true,
+//   slidesToShow: 1,
+//   fade: true,
+//   centerMode: true,
+//   speed: 2000
+// });
+
 var carSlideIndex = 1;
 
 carShowDivs(carSlideIndex);
@@ -98,5 +107,11 @@ $(".rightCarArrow").click(function(){
     carPlusDivs(1)
 });
 
+
+
+// $(window).resize(function() {
+//   var img = $('.fairfimage');
+//   img.style.width = "100%";
+// });
 
 })
