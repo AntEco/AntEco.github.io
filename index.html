@@ -3,66 +3,242 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="Stylesheet" text="text/css" href="css/style.css">
-	<link href='https://fonts.googleapis.com/css?family=Work+Sans:600' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="assets/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="assets/slick/slick-theme.css"/>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Inconsolata');
+	</style>
+	<style>
+		@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
+	</style>
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Fira+Sans');
+	</style>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js">
+	</script>
 	<title>Anton Economos - Web Dev</title>
 </head>
 <body>
-
-
-
-<div id="landing">
 	<nav>
-	<div id='logo'>
-		<a href="#landing">Anton Economos</a>
+		<ul>
+			<li id="logo" class="navLink">Logo</li>
+			<li><a href="#hello" class="navLink">Hello</a></li>
+			<li><a href="#about" class="navLink">About</a></li>
+			<li><a href="#skills" class="navLink">Skills</a></li>
+			<li><a href="#projects" class="navLink">Projects</a></li>
+			<li><a href="#contact" class="navLink">Contact</a></li>
+		</ul>
+	</nav>
+
+	<div id="hello">
+		<div class="videoContainer">
+			<div id="helloContent1">
+				Hello, my name is Anton.
+			</div>
+			<div id="helloContent2">
+				I'm a web developer.
+			</div>
+        	<video autoplay muted loop class="fillWidth">
+            	<source src="css/hello.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+    	</div>
 	</div>
-		<a class='navlink' href="#about">About</a>
-		<a class='navlink' href="#projects">Projects</a>
-		<a class='navlink' href="#connect">Connect</a>
-</nav>
-    <div class="videoContainer">
-        <div id="headertitle">
-		(LIVE FEED OF ME MAKING THE SITE)
+
+	<div id="about">
+		<div id="aboutSidebar" class="sidebar">
+			<p>In my previous role in recruitment, I had the BEST looking ads on Craigslist. Using only HTML, I was able to create professional looking ads attracting thousands of applicants for each of the positions I was recruiting for. It became one of the most enjoyable aspects of my job. That's when I decided to take the leap and turn the small HTML skills I had learned, and turn them into a career.</p>
+			<br>
+			<p>I did a lot of self-teaching for several months, and realized that coding was a true passion of mine. The ability to have an idea and a vision, and turn it into a reality was an amazing feeling. In order to progress my skills quicker I attended New York Code + Design Academy. I am now proficient in HTML, SCSS, javaScript, jQuery, Ruby, Ruby on Rails, in addition to other languages. I have worked both on my and own and collaboratively to create a variety of web apps, sites, and video games.</p>
+			<br>
+			<p>With 6 years experience in Account/Project Management, I have a great ability to multi-task and handle whatever is thrown at me. I love to code. Now I'm looking for an opportunity to combine the two.</p>
 		</div>
-        <video autoplay muted loop class="fillWidth">
-            <source src="css/headerVid1.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
-    </div>
 
-</div>
-
-<div id="about">
-	<div id="languages">
-		<h1><u>Skills</u></h1>
-		<img class="languageImage" src="css/htmlLogo.png">
-		<img class="languageImage" src="css/cssLogo.png">
-		<img class="languageImage" src="css/jsLogo.png">
-		<img class="languageImage" src="css/jqueryLogo.png">
-		<img class="languageImage" src="css/rubyLogo.png">
-		<img class="languageImage" src="css/rubyRailsLogo.png">
+		<div class="mainContent">
+			coancson
+		</div>
 	</div>
 
-	<div id="myInfo">
-		<h1><u>About:</u></h1>
+	<div id="skills">
+		<div id="skillsSidebar" class="sidebar">
+			<!-- Following section contains spans to create the desired font coloring to make it look like sublimetext -->
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">HTML</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 80</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">CSS</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 65</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">JavaScript</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 60</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">jQuery</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 50</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">motivation</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 100</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">Ruby</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 30</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">Rails</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 50</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">teamPlayer</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 90</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+			<span style="color:#5EB3B3">.</span>
+			<span style="color:#BB80B3">senseOfHumor</span>&nbsp;
+			<span style="color:#5EB3B3">{</span><br>
+			<span style="color:#FAC862">&nbsp;&nbsp;&nbsp;&nbsp;value</span>
+			<span style="color:#5EB3B3">:</span>
+			<span style="color:#F99157"> 85</span>
+			<span style="color:#5EB3B3">;<br>
+			}<br>
+			<br>
+		</div>
 
-		<p>In my previous role in recruitment, I had the BEST looking ads on Craigslist. Using Craigslists simple HTML interface, I was able to create some great, professional looking ads attracting thousands of applicants for each of the positions I was recruiting for. It became one of the most enjoyable aspects of my job. That's when I decided to take the leap and turn the small HTML skills I had learned, and turn them into a career.</p>
-
-		<p>I did a lot of self-teaching for several months, and realized that coding was a true passion of mine. The ability to have an idea and a vision, and turn it into a reality was an amazing feeling. In order to progress my skills quicker I attended New York Code + Design Academy. I am now proficient in HTML, SCSS, javaScript, jQuery, Ruby, Ruby on Rails, in addition to other languages. I have worked both on my and own and collaboratively to create web apps, various sites, and video games.</p>
-
-		<p>Most recently I taught myself the JS library Phaser in order to build a video game which utilizes "bullet-time" and defenestration. I also created a web app which utilizes the Uber and Lyft APIs, in order to tell you which would offer you a cheaper ride to your destination.</p>
-
-		<p>With 6 years experience in Account/Project Management, I have a great ability to multi-task and handle whatever is thrown at me. I love to code. Now I'm looking for an opportunity to combine the two.</p>
+		<div id="skillsContent" class="mainContent">
+			<canvas id="skillsChart"><script>
+				var ctx = document.getElementById("skillsChart");
+				var myChart = new Chart(ctx, {
+				  type: 'polarArea',
+				  data: {
+				    labels: ['HTML', 'CSS', 'JavaScript', 'jQuery', 'Motivation', 'Ruby', 'Rails', 'Team Player', 'Sense of Humor'],
+				    datasets: [{
+				      data: [80, 65, 60, 50, 100, 30, 50, 90, 85,],
+				      backgroundColor: ["rgba(244, 158, 66, .7)", "rgba(66, 134, 244, .7)", "rgba(149, 66, 244, .7)", "rgba(76, 240, 255, .7)", "rgba(66, 244, 173, .7)", "rgba(244, 220, 66, .7)", "rgba(244, 66, 66, .7)", "rgba(0, 0, 300, .7)", "rgba(216, 125, 134, .7)"],
+				    }]
+				  },
+				  options: {
+			        legend: {
+			            display: false,
+			            startAngle: 25,
+			            labels: {
+			                fontColor: 'rgb(0, 0, 0)',
+			                fontSize: 15
+			            }
+			        },
+			        startAngle: 5,
+			        animation: {
+			        	animateRotate: true,
+			        }
+					}
+				});
+			</script></canvas>
+		</div>
 	</div>
-</div>
 
-<div id ="projects">
-	<div id="projectHeader">
-		<h1><u>Projects:</u></h1>
-	</div>
-	<div id="fairFare">
-		<h2>Fair<span style="color:#fc21bd">Fare</span></h2>
-			<div id="ffCarousel" class="carousel" slide>
-				<div class="single-item">
+	<div id="projects">
+		<div id="projectsSidebar" class="sidebar">
+			<div id="prevArrow">Prev</div>
+			<div id="nextArrow">Next</div>
+			<div class="projectTitle" id="ffTitle">Fair<span style="color:#fc21bd">Fare</span></div>
+			<div class="projectTitle" id="wotTitle">Window of Time</div>
+			<div class="projectTitle">Portfolio Site</div>
+			<div class="projectTitle">Yea yea whatever</div>
+			<div id="projectNav">
+				<div class="projectDescribe">
+					<h1>About</h1><br>
+					<p>FairFare is an Uber vs. Lyft price comparing tool. FairFare utilizes APIs from Uber and Lyft to provide real-time pricing on fares including surge rates. Google Maps' autocomplete feature provides suggestions on destinations for fareseekers. FairFare was built with a mobile-first design.</p>
+					<p>Try FairFare here:&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://fairf.herokuapp.com">fairf.herokuapp.com</a><br>
+					<br>
+					<h1>Languages/Skills Used:</h1>
+					<span class="languages">Ruby</span>
+					<span class="languages">Rails</span>
+					<span class="languages">AJAX</span>
+					<span class="languages">JavaScript</span>
+					<span class="languages">Uber API</span>
+					<span class="languages">Lyft API</span>
+					<span class="languages">Google Maps API</span>
+					<span class="languages">UJS</span>
+					<span class="languages">heroku</span>
+					<span class="languages">Bootstrap</span>
+					<span class="languages">JSON</span>
+					<span class="languages">CURL Commands</span>
+				</div>
+
+				<div class="projectDescribe">
+					<h1>About</h1><br>
+					<p><i>Window of Time</i> is a Web Game developed with the JavaScript library Phaser. Inspired from the overhead style of the original GTA games, you control a character who has the ability to slow time when they stop moving and defenstrates their foes. All sprites and sprite animations, required extensive use of Photoshop and JSON.</p>
+					<p>Play <i>Window of Time:</i>&nbsp;&nbsp;&nbsp;&nbsp;<a target="_blank" href="http://defenestrate.herokuapp.com/menu">defenestrate.herokuapp.com</a><br>
+					<br>
+					<h1>Languages/Skills Used:</h1>
+					<span class="languages">Phaser Library</span>
+					<span class="languages">imageMagick</span>
+					<span class="languages">Ray Casting</span>
+					<span class="languages">PhotoShop</span>
+					<span class="languages">JavaScript</span>
+					<span class="languages">jQuery</span>
+					<span class="languages">Rails</span>			
+					<span class="languages">JSON</span>
+					<span class="languages">heroku</span>
+				</div>
+				<div class="projectDescribe">
+					<h1>About</h1><br>
+					<p>The site you are on right now (meta right?).</p>
+					<br>
+					<h1>Languages/Skills Used:</h1>
+					<span class="languages">JavaScript</span>
+					<span class="languages">Phaser</span>
+					<span class="languages">Rails</span>
+					<span class="languages">Ray Casting</span>
+					<span class="languages">PhotoShop</span>
+					<span class="languages">UJS</span>
+					<span class="languages">heroku</span>
+				</div>
+				<div class="projectDescribe">Yea yea whatever</div>
+			</div>
+		</div>
+
+		<div class="mainContent">
+			<div class="project" id="fairFare">
+				<a class="leftCarArrow"><img src="css/arrowbutton.png"></a>
+				<a class="rightCarArrow"><img src="css/arrowbutton.png"></a>
+				<div id="ffCarousel" class="carousel">
 					<div class="fairfimage"><img src="css/fairfare1.png"></div>
 					<div class="fairfimage"><img src="css/fairfare2.png"></div>
 					<div class="fairfimage"><img src="css/fairfare3.png"></div>
@@ -71,17 +247,24 @@
 					<div class="fairfimage"><img src="css/fairfare6.png"></div>
 				</div>
 			</div>
+		
+			<div class="project" id="windowOfTime">
+				
+			</div>
+
+			<div class="project" id="myPortfolio">
+				<iframe src="http://antoneconomos.com"></iframe>
+			</div>
+			<div class="project">Yea yea whatever</div>	
+			</div>
 	</div>
 
-</div>
-
-	<div id="connect">
-		<iframe src="http://antoneconomos.com" frameborder="0" height="1000" width="1000"></iframe>
+	<div id="contact">
+		<div class="sidebar">Contact</div>
+		<div class="mainContent">coancson</div>
 	</div>
-<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>	
-<script type="text/javascript" src="assets/theJs.js"></script>
-<script type="text/javascript" src="assets/slick/slick.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script src="assets/theJs.js"></script>
 
-	
 </body>
 </html>
