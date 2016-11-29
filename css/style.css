@@ -1,19 +1,14 @@
 @font-face {
   font-family: lumberjack;
-  src: url(LumberjackInlineRough.otf)
-}
-
+  src: url(LumberjackInlineRough.otf); }
 * {
   margin: 0;
-    padding: 0;
-    border: 0;
-    outline: 0;
-    font-size: 100%;
-    vertical-align: baseline;
-    background: transparent;
-  
-  // font-family: 'Work Sans', sans-serif;
-}
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
 
 nav {
   position: fixed;
@@ -26,70 +21,62 @@ nav {
   background-color: black;
   opacity: .8;
   z-index: 99;
-  font-family: 'lumberjack';
-
-  a {
+  font-family: 'lumberjack'; }
+  nav a {
     display: block;
     text-decoration: none;
-    color: white;
-  }
-
-  ul {
-    padding-left: 0;
-  }
-  
-  li {
-    -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-    -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-    box-sizing: border-box;         /* Opera/IE 8+ */
+    color: white; }
+  nav ul {
+    padding-left: 0; }
+  nav li {
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
     height: 50px;
-    //margin-top: 12px;
     padding: 12px 0 0 0;
     list-style-type: none;
     display: inline-block;
     width: 16.1vw;
     text-align: center;
     font-size: 20px;
-    color: white;
-  }
-
-  li:hover {
-    background-color: gray;
-    a {
-      color: orange;
-    }
-  }
-
-
-}
+    color: white; }
+  nav li:hover {
+    background-color: gray; }
+    nav li:hover a {
+      color: orange; }
 
 .sidebar {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
   width: 30vw;
   background-color: gray;
   float: right;
   height: 100vh;
   border-bottom: 1px solid black;
-  overflow-y: auto;
-}
+  overflow-y: auto; }
 
 .mainContent {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
   width: 70vw;
   background-color: lightgray;
   height: 100vh;
-  border-bottom: 1px solid black;
-
-}
+  border-bottom: 1px solid black; }
 
 #hello {
   margin-bottom: 0;
-  font-family: 'lumberjack';
-}
+  font-family: 'lumberjack'; }
 
 #helloContent1 {
   clear: both;
@@ -100,13 +87,11 @@ nav {
   padding-top: 250px;
   display: none;
   margin: 0 auto;
-  width: 100%;
-}
+  width: 100%; }
 
 #videoContainer {
   margin-bottom: 0;
-  padding-bottom: 0;
-}
+  padding-bottom: 0; }
 
 #helloContent2 {
   clear: both;
@@ -117,8 +102,7 @@ nav {
   padding-top: 300px;
   display: none;
   margin: 0 auto;
-  width: 100%;
-}
+  width: 100%; }
 
 .fillWidth {
   width: 100%;
@@ -126,55 +110,51 @@ nav {
   top: 0;
   margin: 0;
   padding-top: 0;
-  z-index: -1000;
-}
+  z-index: -1000; }
 
 #about {
   margin-top: -5px;
   height: 100vh;
-  font-family: 'lumberjack';
-  //background-color: grey;
-}
+  font-family: 'lumberjack'; }
 
 #aboutSidebar {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
   padding: 60px 15px 0 5px;
-  text-align: center;
-}
+  text-align: center; }
 
 #skillsSidebar {
-  -webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-  -moz-box-sizing: border-box;    /* Firefox, other Gecko */
-  box-sizing: border-box;         /* Opera/IE 8+ */
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
   padding: 60px 15px 0 25px;
   font-family: 'Inconsolata', monospace;
   font-size: 20px;
   background-color: #1B2B34;
-  overflow: -moz-scrollbars-vertical; 
-  overflow-y: scroll;
-
-}
+  overflow: -moz-scrollbars-vertical;
+  overflow-y: scroll; }
 
 #skillsContent {
-    padding-top: 60px;
-    background-color: rgb(187, 188, 191);
-}
+  padding-top: 60px;
+  background-color: #bbbcbf; }
 
 #skillsChart {
   margin: 0 auto;
   max-width: 45vw;
-  max-height: 90vh;
-
-}
+  max-height: 90vh; }
 
 #projectsSidebar {
   padding-top: 60px;
   font-family: 'lumberjack';
-  background-color: rgb(41, 38, 51);
-  color: white;
-}
+  background-color: #292633;
+  color: white; }
 
 #prevArrow {
   background-color: #2196F3;
@@ -183,55 +163,44 @@ nav {
   width: 25px;
   height: 25px;
   opacity: 0.85;
-  text-align: center;
-}
+  text-align: center; }
 
 #nextArrow {
-  background-color:#F44336;
+  background-color: #F44336;
   padding: 20px;
   float: right;
   width: 25px;
   height: 25px;
   opacity: 0.85;
-  text-align: center;
-}
+  text-align: center; }
 
 .projectTitle {
   text-align: center;
   font-size: 30px;
-  padding-top: 10px;
-
-}
+  padding-top: 10px; }
 
 #ffTitle {
   font-size: 40px;
-  font-family: 'Fira Sans', sans-serif;
-}
+  font-family: 'Fira Sans', sans-serif; }
 
 #wotTitle {
   font-family: 'Press Start 2P', cursive;
   color: white;
-  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black;
-}
+  text-shadow: -4px 0 black, 0 4px black, 4px 0 black, 0 -4px black; }
 
 .projectDescribe {
   clear: both;
-  margin: 30px 10px 0px 10px;
-  h1 {
+  margin: 30px 10px 0px 10px; }
+  .projectDescribe h1 {
     border-bottom: 1px solid white;
-    font-size: 20px;
-  }
-  a {
-    color: rgb(66, 134, 244);
-  }
-  a:hover {
-    color: pink;
-  }
-}
+    font-size: 20px; }
+  .projectDescribe a {
+    color: #4286f4; }
+  .projectDescribe a:hover {
+    color: pink; }
 
 .project {
-  padding-top: 60px;
-}
+  padding-top: 60px; }
 
 .languages {
   font-size: 20px;
@@ -239,77 +208,67 @@ nav {
   padding: 4px;
   margin-right: 3px;
   margin-top: 3px;
-  border: 1px solid rgb(66, 134, 244);
+  border: 1px solid #4286f4;
   border-radius: 6px;
-  background-color: rgba(66, 134, 244, .5);
-}
+  background-color: rgba(66, 134, 244, 0.5); }
 
 #fairFare {
-  background: url("newCab.jpg") no-repeat center center fixed; 
+  background: url("newCab.jpg") no-repeat center center fixed;
   height: 100vh;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
-  background-size: cover;
-
-}
+  background-size: cover; }
 
 #ffCarousel {
   margin: 0 auto;
-  width: 25vw;  
-}
+  width: 25vw; }
 
 .fairfimage {
-  padding-left: 40px;
-  img {
+  padding-left: 40px; }
+  .fairfimage img {
     max-width: 100%;
     height: auto;
-    width: auto\9; /* ie8 */
-}
-}
+    width: auto\9;
+    /* ie8 */ }
 
 .leftCarArrow {
   color: white;
   position: relative;
   top: 40vh;
-  left: 20vw;
-  img {
+  left: 20vw; }
+  .leftCarArrow img {
     width: auto;
     height: auto;
     max-width: 5vw;
-    max-height: 5vh;
-  }
-}
+    max-height: 5vh; }
 
 .rightCarArrow {
   color: white;
   position: relative;
   top: 40vh;
-  left: 46vw;
-  img {
+  left: 46vw; }
+  .rightCarArrow img {
     width: auto;
     height: auto;
     max-width: 5vw;
     max-height: 5vh;
-    -ms-transform: rotate(180deg); /* IE 9 */
-      -webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-      transform: rotate(180deg);
-  }
-}
-
+    -ms-transform: rotate(180deg);
+    /* IE 9 */
+    -webkit-transform: rotate(180deg);
+    /* Chrome, Safari, Opera */
+    transform: rotate(180deg); }
 
 #windowOfTime {
   height: 100%;
   width: 100%;
-  background-image: url('windowOfTimeGameplayVid.gif');
+  background-image: url("windowOfTimeGameplayVid.gif");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
-  background-color: black;
-}
+  background-color: black; }
 
-#myPortfolio {
-  iframe {
-    width: 100%;
-  }
-}
+#myPortfolio iframe {
+  width: 100%; }
+
+/*# sourceMappingURL=style.css.map */
