@@ -17,15 +17,16 @@ nav {
   margin: 0;
   top: 0;
   padding: 0;
-  border-bottom: solid black 1px;
   background-color: black;
   opacity: .8;
   z-index: 99;
-  font-family: 'lumberjack'; }
+  font-family: 'Roboto', sans-serif; }
   nav a {
     display: block;
     text-decoration: none;
     color: white; }
+  nav .active {
+    color: #2dbccb; }
   nav ul {
     padding-left: 0; }
   nav li {
@@ -76,33 +77,40 @@ nav {
 
 #hello {
   margin-bottom: 0;
-  font-family: 'lumberjack'; }
-
-#helloContent1 {
-  clear: both;
-  font-size: 50px;
-  color: white;
-  position: absolute;
-  text-align: center;
-  padding-top: 250px;
-  display: none;
-  margin: 0 auto;
-  width: 100%; }
+  font-family: 'Roboto', sans-serif;
+  position: relative; }
 
 #videoContainer {
   margin-bottom: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  position: absolute; }
 
-#helloContent2 {
-  clear: both;
-  font-size: 50px;
+#helloContainer {
+  width: 100%;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); }
+
+#helloContent1 {
+  font-size: 3.3em;
   color: white;
   position: absolute;
   text-align: center;
-  padding-top: 300px;
   display: none;
   margin: 0 auto;
   width: 100%; }
+
+#helloContent2 {
+  font-size: 3.3em;
+  color: white;
+  position: absolute;
+  text-align: center;
+  display: none;
+  margin: 0 auto;
+  width: 100%;
+  padding-top: 40px; }
 
 .fillWidth {
   width: 100%;
@@ -115,7 +123,7 @@ nav {
 #about {
   margin-top: -5px;
   height: 100vh;
-  font-family: 'lumberjack'; }
+  font-family: 'Roboto', sans-serif; }
 
 #aboutSidebar {
   -webkit-box-sizing: border-box;
@@ -125,7 +133,8 @@ nav {
   box-sizing: border-box;
   /* Opera/IE 8+ */
   padding: 60px 15px 0 5px;
-  text-align: center; }
+  text-align: center;
+  font-size: 17px; }
 
 #skillsSidebar {
   -webkit-box-sizing: border-box;
@@ -152,27 +161,29 @@ nav {
 
 #projectsSidebar {
   padding-top: 60px;
-  font-family: 'lumberjack';
+  font-family: 'Roboto', sans-serif;
   background-color: #292633;
   color: white; }
 
 #prevArrow {
-  background-color: #2196F3;
   padding: 20px;
   float: left;
-  width: 25px;
-  height: 25px;
   opacity: 0.85;
-  text-align: center; }
+  text-align: center;
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px; }
 
 #nextArrow {
-  background-color: #F44336;
   padding: 20px;
   float: right;
-  width: 25px;
-  height: 25px;
   opacity: 0.85;
-  text-align: center; }
+  text-align: center;
+  font-family: 'slick';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 30px; }
 
 .projectTitle {
   text-align: center;
@@ -198,12 +209,14 @@ nav {
     color: #4286f4; }
   .projectDescribe a:hover {
     color: pink; }
+  .projectDescribe br {
+    line-height: 1px; }
 
 .project {
   padding-top: 60px; }
 
 .languages {
-  font-size: 20px;
+  font-size: 18px;
   display: inline-block;
   padding: 4px;
   margin-right: 3px;
@@ -220,17 +233,19 @@ nav {
   -o-background-size: cover;
   background-size: cover; }
 
+#carContainer {
+  padding-top: 50px; }
+
 #ffCarousel {
   margin: 0 auto;
   width: 25vw; }
 
-.fairfimage {
-  padding-left: 40px; }
-  .fairfimage img {
-    max-width: 100%;
-    height: auto;
-    width: auto\9;
-    /* ie8 */ }
+.fairfimage img {
+  max-width: 100%;
+  margin: 0 auto;
+  height: auto;
+  width: auto\9;
+  /* ie8 */ }
 
 .leftCarArrow {
   color: white;

@@ -71,47 +71,44 @@ $("#nextArrow").click(function(){
   plusDivs(1)
 });
 
-// $('.carousel').slick({
-
-//   dots: true,
-//   slidesToShow: 1,
-//   fade: true,
-//   centerMode: true,
-//   speed: 2000
-// });
-
-var carSlideIndex = 1;
-
-carShowDivs(carSlideIndex);
-
-function carPlusDivs(n) {
-    carShowDivs(carSlideIndex += n);
-}
-
-function carShowDivs(n) {
-    var i;
-    var x = document.getElementsByClassName("fairfimage");
-    if (n > x.length) {carSlideIndex = 1} 
-    if (n < 1) {carSlideIndex = x.length} ;
-    for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none"; 
-    }
-    x[carSlideIndex-1].style.display = "block"; 
-}
-
-$(".leftCarArrow").click(function(){
-    carPlusDivs(-1)
+$('.fairCar').slick({
+   dots: true,
 });
 
-$(".rightCarArrow").click(function(){
-    carPlusDivs(1)
-});
+$(document).on("scroll", onScroll);
+ 
+        $('a[href^="#"]').on('click', function (e) {
+            e.preventDefault();
+            $(document).off("scroll");
+ 
+            $('a').each(function () {
+                $(this).removeClass('active');
+            })
+            $(this).addClass('active');
+ 
+            var target = this.hash;
+            $target = $(target);
+            $('html, body').stop().animate({
+                'scrollTop': $target.offset().top+2
+            }, 500, 'swing', function () {
+                window.location.hash = target;
+                $(document).on("scroll", onScroll);
+            });
+        });
+    });
+ 
+    function onScroll(event){
+        var scrollPosition = $(document).scrollTop();
+        $('nav a').each(function () {
+            var currentLink = $(this);
+            var refElement = $(currentLink.attr("href"));
+            if (refElement.position().top - (refElement.height()/3) <= scrollPosition && refElement.position().top + refElement.height()> scrollPosition) {
+                $('nav ul li a').removeClass("active");
+                currentLink.addClass("active");
+            }
+            else{
+                currentLink.removeClass("active");
+            }
+        });
 
-
-
-// $(window).resize(function() {
-//   var img = $('.fairfimage');
-//   img.style.width = "100%";
-// });
-
-})
+}

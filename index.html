@@ -2,10 +2,15 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<title>Anton Economos - Web Dev</title>
+
 	<link rel="Stylesheet" text="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick.css"/>
+	<link rel="stylesheet" type="text/css" href="slick-1.6.0/slick/slick-theme.css"/>
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Inconsolata');
 	</style>
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300" rel="stylesheet">
 	<style>
 		@import url('https://fonts.googleapis.com/css?family=Press+Start+2P');
 	</style>
@@ -14,13 +19,13 @@
 	</style>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.bundle.min.js">
 	</script>
-	<title>Anton Economos - Web Dev</title>
+	
 </head>
 <body>
 	<nav>
 		<ul>
-			<li id="logo" class="navLink">Logo</li>
-			<li><a href="#hello" class="navLink">Hello</a></li>
+			<li id="logo">Logo</li>
+			<li><a href="#hello" class="active" class="navLink">Hello</a></li>
 			<li><a href="#about" class="navLink">About</a></li>
 			<li><a href="#skills" class="navLink">Skills</a></li>
 			<li><a href="#projects" class="navLink">Projects</a></li>
@@ -30,15 +35,19 @@
 
 	<div id="hello">
 		<div class="videoContainer">
-			<div id="helloContent1">
-				Hello, my name is Anton.
+	        	<div id="helloContainer">
+				<div id="helloContent1">
+					Hello, my name is Anton.
+				</div><br>
+				<div id="helloContent2">
+					I'm a web developer.
+				</div>
 			</div>
-			<div id="helloContent2">
-				I'm a web developer.
-			</div>
-        	<video autoplay muted loop class="fillWidth">
-            	<source src="css/hello.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+	        	<video autoplay muted loop class="fillWidth">
+	            	<source src="css/hello.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.</video>
+	            	
     	</div>
+    	
 	</div>
 
 	<div id="about">
@@ -174,8 +183,8 @@
 
 	<div id="projects">
 		<div id="projectsSidebar" class="sidebar">
-			<div id="prevArrow">Prev</div>
-			<div id="nextArrow">Next</div>
+			<div id="prevArrow">←</div>
+			<div id="nextArrow">→</div>
 			<div class="projectTitle" id="ffTitle">Fair<span style="color:#fc21bd">Fare</span></div>
 			<div class="projectTitle" id="wotTitle">Window of Time</div>
 			<div class="projectTitle">Portfolio Site</div>
@@ -219,16 +228,16 @@
 				</div>
 				<div class="projectDescribe">
 					<h1>About</h1><br>
-					<p>The site you are on right now (meta right?).</p>
+					<p>My personal portfolio site. Made with a combination of HTML, CSS, vanilla JS, jQuery, and a small amount of regEx. You can only incept so far.</p>
 					<br>
 					<h1>Languages/Skills Used:</h1>
+					<span class="languages">CSS</span>
+					<span class="languages">HTML</span>
 					<span class="languages">JavaScript</span>
-					<span class="languages">Phaser</span>
-					<span class="languages">Rails</span>
-					<span class="languages">Ray Casting</span>
-					<span class="languages">PhotoShop</span>
-					<span class="languages">UJS</span>
-					<span class="languages">heroku</span>
+					<span class="languages">jQuery</span>
+					<span class="languages">regEx</span>
+					<span class="languages">Chart.js</span>
+					<span class="languages">GitHub</span>
 				</div>
 				<div class="projectDescribe">Yea yea whatever</div>
 			</div>
@@ -236,16 +245,22 @@
 
 		<div class="mainContent">
 			<div class="project" id="fairFare">
-				<a class="leftCarArrow"><img src="css/arrowbutton.png"></a>
-				<a class="rightCarArrow"><img src="css/arrowbutton.png"></a>
-				<div id="ffCarousel" class="carousel">
-					<div class="fairfimage"><img src="css/fairfare1.png"></div>
+				
+				<div id="carContainer">
+				<div class="fairCar">
+   					<div class="fairfimage"><img src="css/fairfare1.png"></div>
 					<div class="fairfimage"><img src="css/fairfare2.png"></div>
 					<div class="fairfimage"><img src="css/fairfare3.png"></div>
 					<div class="fairfimage"><img src="css/fairfare4.png"></div>
 					<div class="fairfimage"><img src="css/fairfare5.png"></div>
 					<div class="fairfimage"><img src="css/fairfare6.png"></div>
-				</div>
+  				</div>
+  				</div>
+				<!-- <a class="leftCarArrow"><img src="css/arrowbutton.png"></a>
+				<a class="rightCarArrow"><img src="css/arrowbutton.png"></a>
+				<div id="ffCarousel" class="carousel">
+					
+				</div> -->
 			</div>
 		
 			<div class="project" id="windowOfTime">
@@ -264,6 +279,7 @@
 		<div class="mainContent">coancson</div>
 	</div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+<script type="text/javascript" src="slick-1.6.0/slick/slick.min.js"></script>
 <script src="assets/theJs.js"></script>
 
 </body>
