@@ -12,10 +12,22 @@
   z-index: 100;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(192, 192, 192, 0.5);
-  background-image: url("http://i.stack.imgur.com/MnyxU.gif");
+  background-image: url("loading.gif");
   background-repeat: no-repeat;
-  background-position: center; }
+  background-position: center;
+  background-color: #2B2828; }
+
+#loadText {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  z-index: 101;
+  color: white;
+  font-family: 'Roboto', sans-serif;
+  font-size: 3em; }
 
 * {
   margin: 0;
