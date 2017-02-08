@@ -93,6 +93,7 @@ $("#nextArrow").click(function(){
 
 $('.fairCar').slick({
    dots: true,
+   arrows: true,
 });
 
 $(document).on("scroll", onScroll);
