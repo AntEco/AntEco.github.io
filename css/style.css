@@ -271,11 +271,9 @@ nav {
   background-size: cover; }
 
 #carContainer {
-  padding-top: 50px; }
-
-#ffCarousel {
-  margin: 0 auto;
-  width: 25vw; }
+  padding-top: 50px;
+  width: 70%;
+  margin: 0 auto; }
 
 .fairfimage img {
   max-width: 100%;
@@ -283,33 +281,6 @@ nav {
   height: auto;
   width: auto\9;
   /* ie8 */ }
-
-.leftCarArrow {
-  color: white;
-  position: relative;
-  top: 40vh;
-  left: 20vw; }
-  .leftCarArrow img {
-    width: auto;
-    height: auto;
-    max-width: 5vw;
-    max-height: 5vh; }
-
-.rightCarArrow {
-  color: white;
-  position: relative;
-  top: 40vh;
-  left: 46vw; }
-  .rightCarArrow img {
-    width: auto;
-    height: auto;
-    max-width: 5vw;
-    max-height: 5vh;
-    -ms-transform: rotate(180deg);
-    /* IE 9 */
-    -webkit-transform: rotate(180deg);
-    /* Chrome, Safari, Opera */
-    transform: rotate(180deg); }
 
 #windowOfTime {
   height: 100%;

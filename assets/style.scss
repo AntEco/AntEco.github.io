@@ -33,8 +33,6 @@
 	font-family: 'Roboto', sans-serif;
 	font-size: 3em	;
 
-
-
 }
 
 * {
@@ -321,12 +319,14 @@ nav {
 
 #carContainer {
 	padding-top: 50px;
+	width: 70%;
+	margin: 0 auto;
 }
 
-#ffCarousel {
-	margin: 0 auto;
-	width: 25vw;	
-}
+// #ffCarousel {
+// 	margin: 0 auto;
+// 	width: 25vw;	
+// }
 
 .fairfimage {
 	img {
@@ -337,34 +337,34 @@ nav {
 }
 }
 
-.leftCarArrow {
-	color: white;
-	position: relative;
-	top: 40vh;
-	left: 20vw;
-	img {
-		width: auto;
-		height: auto;
-		max-width: 5vw;
-		max-height: 5vh;
-	}
-}
+// .leftCarArrow {
+// 	color: white;
+// 	position: relative;
+// 	top: 40vh;
+// 	left: 20vw;
+// 	img {
+// 		width: auto;
+// 		height: auto;
+// 		max-width: 5vw;
+// 		max-height: 5vh;
+// 	}
+// }
 
-.rightCarArrow {
-	color: white;
-	position: relative;
-	top: 40vh;
-	left: 46vw;
-	img {
-		width: auto;
-		height: auto;
-		max-width: 5vw;
-		max-height: 5vh;
-		-ms-transform: rotate(180deg); /* IE 9 */
-    	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-    	transform: rotate(180deg);
-	}
-}
+// .rightCarArrow {
+// 	color: white;
+// 	position: relative;
+// 	top: 40vh;
+// 	left: 46vw;
+// 	img {
+// 		width: auto;
+// 		height: auto;
+// 		max-width: 5vw;
+// 		max-height: 5vh;
+// 		-ms-transform: rotate(180deg); /* IE 9 */
+//     	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
+//     	transform: rotate(180deg);
+// 	}
+// }
 
 
 #windowOfTime {
