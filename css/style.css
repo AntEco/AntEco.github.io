@@ -73,8 +73,8 @@ nav {
     color: white; }
   nav li:hover {
     background-color: gray; }
-    nav li:hover a {
-      color: orange; }
+  nav #logo {
+    background-color: black; }
   nav .active {
     color: #2dbccb; }
 

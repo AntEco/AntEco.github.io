@@ -87,15 +87,13 @@ nav {
 
 	li:hover {
 		background-color: gray;
-		a {
-			color: orange;
-		}
+	}
+
+	#logo {
+   		background-color: black; 
 	}
 
 	.active { 
-		// height: 50px;
-		// background-color: gray;
-		// top: 0;
 		color: #2dbccb;
 	}
 
