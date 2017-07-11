@@ -299,4 +299,24 @@ nav {
     width: 60vw;
     height: 80vh; }
 
+@media only screen and (max-width: 500px) {
+  #helloContent1 {
+    font-size: 1.5em;
+    color: white;
+    position: absolute;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    width: 100%; }
+
+  #helloContent2 {
+    font-size: 1.5em;
+    color: green;
+    position: absolute;
+    text-align: center;
+    display: none;
+    margin: 0 auto;
+    width: 100%;
+    padding-top: 40px; } }
+
 /*# sourceMappingURL=style.css.map */
