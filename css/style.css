@@ -299,6 +299,38 @@ nav {
     width: 60vw;
     height: 80vh; }
 
+#contact {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
+  width: 100vw;
+  background-color: lightgray;
+  height: 100vh;
+  font-family: 'Roboto', sans-serif; }
+
+#contactTextbox {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+  padding-top: 10%; }
+
+#contactLogos {
+  padding-top: 10%;
+  height: 40vh; }
+  #contactLogos ul {
+    margin: 0;
+    padding: 0;
+    text-align: center; }
+  #contactLogos li {
+    margin: 0 10px;
+    display: inline-block;
+    width: 25%; }
+    #contactLogos li img {
+      max-width: 40%; }
+
 @media only screen and (max-width: 500px) {
   #helloContent1 {
     font-size: 1.5em;
