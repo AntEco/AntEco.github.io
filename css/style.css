@@ -318,18 +318,23 @@ nav {
   padding-top: 10%; }
 
 #contactLogos {
-  padding-top: 10%;
+  padding-top: 5%;
   height: 40vh; }
   #contactLogos ul {
     margin: 0;
     padding: 0;
     text-align: center; }
   #contactLogos li {
+    list-style: none; }
+  #contactLogos .contactItem {
     margin: 0 10px;
     display: inline-block;
-    width: 25%; }
-    #contactLogos li img {
-      max-width: 40%; }
+    max-width: 50%; }
+    #contactLogos .contactItem img {
+      max-width: 60%; }
+    #contactLogos .contactItem p {
+      line-height: 200%;
+      color: #E84A5F; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {
