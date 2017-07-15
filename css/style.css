@@ -309,7 +309,8 @@ nav {
   width: 100vw;
   background-color: lightgray;
   height: 100vh;
-  font-family: 'Roboto', sans-serif; }
+  font-family: 'Roboto', sans-serif;
+  position: relative; }
 
 #contactTextbox {
   width: 100%;
@@ -335,11 +336,16 @@ nav {
     #contactLogos .contactItem p {
       line-height: 200%;
       color: #E84A5F; }
+    #contactLogos .contactItem a {
+      color: #259aa7; }
 
 #copyright {
   position: absolute;
   bottom: 0;
-  text-align: center; }
+  width: 100vw;
+  float: clear;
+  text-align: center;
+  margin-bottom: 15px; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {
