@@ -306,64 +306,57 @@ nav {
 }
 
 #fairFare {
-	background: url("newCab.jpg") no-repeat center center fixed; 
+	background: url("newCab.jpg") no-repeat center center fixed;
+	background-attachment: fixed;
 	height: 100vh;
+	width: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
-
 }
 
 #carContainer {
-	padding-top: 50px;
-	width: 70%;
-	margin: 0 auto;
+	height: 100%;
+	width: 100%;
 }
-
-// #ffCarousel {
-// 	margin: 0 auto;
-// 	width: 25vw;	
-// }
 
 .fairfimage {
-	img {
-    max-width: 100%;
-    margin: 0 auto;
-    height: auto;
-    width: auto\9; /* ie8 */
-}
+	width: 255px;
+	margin: 0 auto;
+	padding-top: 50px;
 }
 
-// .leftCarArrow {
-// 	color: white;
-// 	position: relative;
-// 	top: 40vh;
-// 	left: 20vw;
-// 	img {
-// 		width: auto;
-// 		height: auto;
-// 		max-width: 5vw;
-// 		max-height: 5vh;
-// 	}
-// }
+#ffPrev {
+	padding-top: 30%;
+	padding-left: 25%;
+	// display: block;
+	position: relative;
+	// padding: 20px;
+	float: left;
+	opacity: 0.9;
+	vertical-align: center;
+	font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    cursor: pointer;
+    color: white;
+}
 
-// .rightCarArrow {
-// 	color: white;
-// 	position: relative;
-// 	top: 40vh;
-// 	left: 46vw;
-// 	img {
-// 		width: auto;
-// 		height: auto;
-// 		max-width: 5vw;
-// 		max-height: 5vh;
-// 		-ms-transform: rotate(180deg); /* IE 9 */
-//     	-webkit-transform: rotate(180deg); /* Chrome, Safari, Opera */
-//     	transform: rotate(180deg);
-// 	}
-// }
-
+#ffNext {
+	padding-top: 30%;
+	padding-right: 25%;
+	float: right;
+	opacity: 0.9;
+	text-align: center;
+	font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    font-size: 25px;
+    cursor: pointer;
+    color: #fc21bd;
+}
 
 #windowOfTime {
 	height: 100%;
@@ -382,7 +375,6 @@ nav {
 		margin: 0 auto;
 		width: 60vw;
 		height: 80vh;
-
 	}
 }
 

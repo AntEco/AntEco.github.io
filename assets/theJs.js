@@ -91,10 +91,35 @@ $("#nextArrow").click(function(){
   plusDivs(1)
 });
 
-$('.fairCar').slick({
-   dots: true,
-   // arrows: true,
+var ffIndex = 1;
+ffShowDivs(ffIndex);
+
+function ffPlus(n) {
+    ffShowDivs(ffIndex += n);
+}
+
+function ffShowDivs(n) {
+    var i;
+    var x = document.getElementsByClassName("fairfimage");
+    if (n > x.length) {ffIndex = 1} 
+    if (n < 1) {ffIndex = x.length} ;
+    for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none"; 
+    }
+    x[ffIndex-1].style.display = "block"; 
+}
+
+$("#ffPrev").click(function(){
+    ffPlus(-1)
 });
+
+$("#ffNext").click(function(){
+    ffPlus(1)
+});
+// $('.fairCar').slick({
+//    dots: true,
+//    // arrows: true,
+// });
 
 
 
