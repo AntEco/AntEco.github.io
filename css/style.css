@@ -347,21 +347,13 @@ nav {
   text-align: center;
   margin-bottom: 15px; }
 
-#owCircle {
+#ow {
   margin: 100px 0 0 100px;
-  display: block;
   width: 100px;
-  height: 100px;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border: 1px solid black;
-  background-image: url("ow.png");
-  background-size: 50%;
-  background-repeat: no-repeat;
-  background-position: center; }
-
-#owCirle:active {
-  background-size: 100%; }
+  height: 100px; }
+  #ow img {
+    height: 100px;
+    width: 100px; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {

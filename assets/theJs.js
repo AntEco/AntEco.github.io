@@ -96,6 +96,8 @@ $('.fairCar').slick({
    // arrows: true,
 });
 
+
+
 $(document).on("scroll", onScroll);
  
         $('a[href^="#"]').on('click', function (e) {
@@ -131,5 +133,9 @@ $(document).on("scroll", onScroll);
                 currentLink.removeClass("active");
             }
         });
+
+$("#ow").click(function(){
+    $("#owImg").attr("src", "css/ow2.png")
+});
 
 }
