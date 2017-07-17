@@ -328,13 +328,13 @@ nav {
 }
 
 #ffPrev {
-	padding-top: 30%;
-	padding-left: 25%;
+	margin-top: 30%;
+	margin-left: 25%;
 	// display: block;
 	position: relative;
 	// padding: 20px;
 	float: left;
-	opacity: 0.9;
+	opacity: 0.6;
 	vertical-align: center;
 	font-family: 'slick';
     font-weight: normal;
@@ -344,11 +344,15 @@ nav {
     color: white;
 }
 
+#ffPrev:hover {
+	opacity: .9;
+}
+
 #ffNext {
-	padding-top: 30%;
-	padding-right: 25%;
+	margin-top: 30%;
+	margin-right: 25%;
 	float: right;
-	opacity: 0.9;
+	opacity: 0.6;
 	text-align: center;
 	font-family: 'slick';
     font-weight: normal;
@@ -356,6 +360,10 @@ nav {
     font-size: 25px;
     cursor: pointer;
     color: #fc21bd;
+}
+
+#ffNext:hover {
+	opacity: .9;
 }
 
 #windowOfTime {
