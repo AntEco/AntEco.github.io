@@ -39,9 +39,11 @@
   background: transparent; }
 
 nav {
+  display: inline-block;
   position: fixed;
   width: 100%;
-  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
   margin: 0;
   top: 0;
   padding: 0;
@@ -50,12 +52,13 @@ nav {
   z-index: 99;
   font-family: 'Roboto', sans-serif; }
   nav a {
-    display: block;
     text-decoration: none;
     color: white;
     height: 50px; }
   nav ul {
-    padding-left: 0; }
+    padding-left: 0;
+    min-height: 50px;
+    max-height: 50px; }
   nav li {
     -webkit-box-sizing: border-box;
     /* Safari/Chrome, other WebKit */
@@ -63,8 +66,8 @@ nav {
     /* Firefox, other Gecko */
     box-sizing: border-box;
     /* Opera/IE 8+ */
-    height: 50px;
-    padding: 12px 0 0 0;
+    min-height: 50px;
+    max-height: 50px;
     list-style-type: none;
     display: inline-block;
     width: 16.1vw;
@@ -74,7 +77,20 @@ nav {
   nav li:hover {
     background-color: gray; }
   nav #logo {
-    background-color: black; }
+    -webkit-box-sizing: border-box;
+    /* Safari/Chrome, other WebKit */
+    -moz-box-sizing: border-box;
+    /* Firefox, other Gecko */
+    box-sizing: border-box;
+    /* Opera/IE 8+ */
+    background-color: black;
+    min-height: 50px;
+    max-height: 50px; }
+    nav #logo img {
+      display: inline-block;
+      max-height: 30px;
+      margin-top: 0;
+      padding-top: 10px; }
   nav .active {
     color: #2dbccb; }
 
@@ -296,7 +312,7 @@ nav {
   color: white; }
 
 #ffPrev:hover {
-  opacity: .9; }
+  opacity: 1; }
 
 #ffNext {
   margin-top: 30%;
@@ -312,7 +328,7 @@ nav {
   color: #fc21bd; }
 
 #ffNext:hover {
-  opacity: .9; }
+  opacity: 1; }
 
 #windowOfTime {
   height: 100%;
