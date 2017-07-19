@@ -144,7 +144,9 @@ nav {
 	font-family: 'Roboto', sans-serif;
 	position: relative;
 	height: 100vh;
-	
+	width: 100vw;
+	background-image: url("laptop2.jpg");
+	background-size: cover;
 }
 
 #typeContainer {
@@ -153,7 +155,20 @@ nav {
 	width: 100%;
 	font-size: 3.3em;
 	font-weight: bold;
+	color: white;
+}
 
+#helloLogo {
+	max-width: 100px; 
+	max-height: 100px;
+	margin: 0 auto;
+	padding-top: 15vh;
+	img {
+		height: auto; 
+	    width: auto; 
+	    max-width: 100px; 
+	    max-height: 100px;
+	}
 }
 
 // #videoContainer {

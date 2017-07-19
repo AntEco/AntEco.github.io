@@ -121,14 +121,29 @@ nav {
   margin-bottom: 0;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  height: 100vh; }
+  height: 100vh;
+  width: 100vw;
+  background-image: url("laptop2.jpg");
+  background-size: cover; }
 
 #typeContainer {
   padding-top: 100px;
   text-align: center;
   width: 100%;
   font-size: 3.3em;
-  font-weight: bold; }
+  font-weight: bold;
+  color: white; }
+
+#helloLogo {
+  max-width: 100px;
+  max-height: 100px;
+  margin: 0 auto;
+  padding-top: 15vh; }
+  #helloLogo img {
+    height: auto;
+    width: auto;
+    max-width: 100px;
+    max-height: 100px; }
 
 .fillWidth {
   width: 100%;
