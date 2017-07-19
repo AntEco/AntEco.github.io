@@ -48,7 +48,6 @@
 }
 
 nav {
-	display: inline-block;
 	position: fixed;
 	width: 100%;
 	min-height: 50px;
@@ -67,10 +66,12 @@ nav {
 		text-decoration: none;
 		color: white;
 		height: 50px;
+		padding-top: 12px;
 	}
 
 	ul {
-		padding-left: 0;
+		top: 0;
+		// padding-left: 16.1vw;
 		min-height: 50px;
 		max-height: 50px;
 
@@ -81,14 +82,16 @@ nav {
 		box-sizing: border-box;         /* Opera/IE 8+ */
 		min-height: 50px;
 		max-height: 50px;
+		float: left;
 		//margin-top: 12px;
-		// padding: 12px 0 0 0;
+		padding: 12px 0 0 0;
 		list-style-type: none;
 		display: inline-block;
 		width: 16.1vw;
 		text-align: center;
 		font-size: 20px;
 		color: white;
+		vertical-align: center;
 	}
 
 	li:hover {
@@ -96,18 +99,15 @@ nav {
 	}
 
 	#logo {
-		-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
-		-moz-box-sizing: border-box;    /* Firefox, other Gecko */
-		box-sizing: border-box;         /* Opera/IE 8+ */
+		display: block;
    		background-color: black;
-   		min-height: 50px;
-		max-height: 50px;
-
+   		 float: left;
+  margin-top: auto;
+  margin-bottom: auto;
+  vertical-align: bottom;
    		img {
-   			display: inline-block;
-			max-height: 30px;
-			margin-top: 0;
-			padding-top: 10px;
+			max-height: 26px;
+			// padding-top: 12px;
 		}
 	}
 
@@ -143,44 +143,54 @@ nav {
 	margin-bottom: 0;
 	font-family: 'Roboto', sans-serif;
 	position: relative;
+	height: 100vh;
 	
 }
 
-#videoContainer {
-	margin-bottom: 0;
-	padding-bottom: 0;
-	position: absolute;
-}
-
-#helloContainer{
-	width: 100%;
-	margin-top: -50px;
-	position: absolute;
-	top: 50%;
-  	left: 50%;
-  	transform: translate(-50%, -50%);
-}
-
-#helloContent1 {
-	font-size: 3.3em;
-	color: white;
-	position: absolute;
+#typeContainer {
+	padding-top: 100px;
 	text-align: center;
-	display: none;
-	margin: 0 auto;
 	width: 100%;
+	font-size: 3.3em;
+	font-weight: bold;
+
 }
 
-#helloContent2 {
-	font-size: 3.3em;
-	color: white;
-	position: absolute;
-	text-align: center;
-	display: none;
-	margin: 0 auto;
-	width: 100%;
-	padding-top: 40px;
-}
+// #videoContainer {
+// 	margin-bottom: 0;
+// 	padding-bottom: 0;
+// 	position: absolute;
+// }
+
+// #helloContainer{
+// 	width: 100%;
+// 	margin-top: -50px;
+// 	position: absolute;
+// 	top: 50%;
+//   	left: 50%;
+//   	transform: translate(-50%, -50%);
+// }
+
+// #helloContent1 {
+// 	font-size: 3.3em;
+// 	color: white;
+// 	position: absolute;
+// 	text-align: center;
+// 	display: none;
+// 	margin: 0 auto;
+// 	width: 100%;
+// }
+
+// #helloContent2 {
+// 	font-size: 3.3em;
+// 	color: white;
+// 	position: absolute;
+// 	text-align: center;
+// 	display: none;
+// 	margin: 0 auto;
+// 	width: 100%;
+// 	padding-top: 40px;
+// }
 
 .fillWidth {
 	width: 100%;

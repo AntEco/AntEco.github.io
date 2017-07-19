@@ -36,8 +36,18 @@ $(function() {
     });
   });
 //fade in content on landing
-$("#helloContent1").fadeIn(2000).promise().done(function() {
-    $('#helloContent2').fadeIn(2000);
+// $("#helloContent1").fadeIn(2000).promise().done(function() {
+//     $('#helloContent2').fadeIn(2000);
+// });
+
+$('#helloType').typeIt({
+    strings: ["great looking sites.", "web apps.", "video games"],
+     speed: 110,
+     lifeLike: true,
+     breakLines: false,
+     deleteDelay: 2000,
+     autoStart: true,
+     loop: true
 });
 
 var slideIndex = 1;
@@ -159,8 +169,8 @@ $(document).on("scroll", onScroll);
             }
         });
 
-$("#ow").click(function(){
-    $("#owImg").attr("src", "css/ow2.png")
-});
+// $("#ow").click(function(){
+//     $("#owImg").attr("src", "css/ow2.png")
+// });
 
 }
