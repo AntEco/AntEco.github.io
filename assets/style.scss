@@ -62,7 +62,7 @@ nav {
 	font-family: 'Roboto', sans-serif;
 
 	a {
-		// display: block;
+		display: block;
 		text-decoration: none;
 		color: white;
 		height: 50px;
@@ -84,7 +84,6 @@ nav {
 		max-height: 50px;
 		float: left;
 		//margin-top: 12px;
-		padding: 12px 0 0 0;
 		list-style-type: none;
 		display: inline-block;
 		width: 16.1vw;
@@ -101,10 +100,10 @@ nav {
 	#logo {
 		display: block;
    		background-color: black;
-   		 float: left;
-  margin-top: auto;
-  margin-bottom: auto;
-  vertical-align: bottom;
+  		margin-top: auto;
+  		margin-bottom: auto;
+  		vertical-align: bottom;
+  		padding-top: 12px;
    		img {
 			max-height: 26px;
 			// padding-top: 12px;
@@ -169,51 +168,6 @@ nav {
 	    max-width: 100px; 
 	    max-height: 100px;
 	}
-}
-
-// #videoContainer {
-// 	margin-bottom: 0;
-// 	padding-bottom: 0;
-// 	position: absolute;
-// }
-
-// #helloContainer{
-// 	width: 100%;
-// 	margin-top: -50px;
-// 	position: absolute;
-// 	top: 50%;
-//   	left: 50%;
-//   	transform: translate(-50%, -50%);
-// }
-
-// #helloContent1 {
-// 	font-size: 3.3em;
-// 	color: white;
-// 	position: absolute;
-// 	text-align: center;
-// 	display: none;
-// 	margin: 0 auto;
-// 	width: 100%;
-// }
-
-// #helloContent2 {
-// 	font-size: 3.3em;
-// 	color: white;
-// 	position: absolute;
-// 	text-align: center;
-// 	display: none;
-// 	margin: 0 auto;
-// 	width: 100%;
-// 	padding-top: 40px;
-// }
-
-.fillWidth {
-	width: 100%;
-	height: 100%;
-	top: 0;
-	margin: 0;
-	padding-top: 0;
-	z-index: -1000;
 }
 
 #about {

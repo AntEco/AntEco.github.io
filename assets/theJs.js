@@ -35,13 +35,9 @@ $(function() {
       }
     });
   });
-//fade in content on landing
-// $("#helloContent1").fadeIn(2000).promise().done(function() {
-//     $('#helloContent2').fadeIn(2000);
-// });
 
 $('#helloType').typeIt({
-    strings: ["great looking sites.", "web apps.", "video games"],
+    strings: ["great looking sites.", "web apps.", "web based video games."],
      speed: 110,
      lifeLike: true,
      breakLines: false,
@@ -169,8 +165,18 @@ $(document).on("scroll", onScroll);
             }
         });
 
-// $("#ow").click(function(){
-//     $("#owImg").attr("src", "css/ow2.png")
-// });
+var owImage = "assets/ow.png";
+var owImageFalse = false;
+
+$(".owImg").click(function(){
+    if(owImageFalse) {
+             $(this).attr('src','assets/ow.png');
+             owImageFalse = false;
+    }
+    else {
+         $(this).attr('src','assets/ow2.png');
+         owImageFalse = true;
+        }
+});
 
 }
