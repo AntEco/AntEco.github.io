@@ -124,11 +124,11 @@ $("#ffNext").click(function(){
 });
 
 $('.aboutCat').click(function(){
-    $('.aboutCat').removeClass("aboutActive");
+    $(".aboutCat").removeClass("aboutActive");
+    $(".aboutImg").removeClass("activeImg");
     $(this).addClass("aboutActive");
+    $(this).find($(".aboutImg")).addClass("activeImg");
 });
-
-
 
 $(document).on("scroll", onScroll);
  

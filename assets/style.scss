@@ -483,24 +483,32 @@ nav {
 		height: 100px;
 		border-radius: 50%;
 		background-color: white;
+		border: 1px solid gray;
 	}
-	#aboutImg {
-		height: 50px;
-		width: 50px;
-    	margin: auto;
-		display: block;
+	.aboutImg {
+		
 	}
 }
 
 .aboutActive {
 	.aboutImgContainer{
 	background-color: green;
-	}
-	#aboutImg {
-		opacity: 0;
+	border: none;
 	}
 }
 
+.activeImg, #nerd1 {
+	
+		background-image: url("nerd2.png");
+}
+
+// #nerd1 {
+// 	height: 50px;
+// 	width: 50px;
+//     margin: auto;
+// 	display: block;
+// 	background-image: url("nerd1.png");
+// }
 
 
 
