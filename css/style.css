@@ -85,9 +85,9 @@ nav {
     margin-top: auto;
     margin-bottom: auto;
     vertical-align: bottom;
-    padding-top: 12px; }
+    padding-top: 10px; }
     nav #logo img {
-      max-height: 26px; }
+      max-height: 30px; }
   nav .active {
     color: #2dbccb; }
 
@@ -371,17 +371,26 @@ nav {
   position: absolute;
   bottom: 0;
   width: 100vw;
-  float: clear;
   text-align: center;
   margin-bottom: 15px; }
 
-#ow {
-  margin: 100px 0 0 100px;
-  width: 100px;
-  height: 100px; }
-  #ow img {
+.aboutCat {
+  padding: 50px 0 0 50px; }
+  .aboutCat .aboutImgContainer {
+    width: 100px;
     height: 100px;
-    width: 100px; }
+    border-radius: 50%;
+    background-color: white; }
+  .aboutCat #aboutImg {
+    height: 50px;
+    width: 50px;
+    margin: auto;
+    display: block; }
+
+.aboutActive .aboutImgContainer {
+  background-color: green; }
+.aboutActive #aboutImg {
+  opacity: 0; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {

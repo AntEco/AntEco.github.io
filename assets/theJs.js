@@ -122,10 +122,11 @@ $("#ffPrev").click(function(){
 $("#ffNext").click(function(){
     ffPlus(1)
 });
-// $('.fairCar').slick({
-//    dots: true,
-//    // arrows: true,
-// });
+
+$('.aboutCat').click(function(){
+    $('.aboutCat').removeClass("aboutActive");
+    $(this).addClass("aboutActive");
+});
 
 
 
@@ -164,19 +165,5 @@ $(document).on("scroll", onScroll);
                 currentLink.removeClass("active");
             }
         });
-
-var owImage = "assets/ow.png";
-var owImageFalse = false;
-
-$(".owImg").click(function(){
-    if(owImageFalse) {
-             $(this).attr('src','assets/ow.png');
-             owImageFalse = false;
-    }
-    else {
-         $(this).attr('src','assets/ow2.png');
-         owImageFalse = true;
-        }
-});
 
 }
