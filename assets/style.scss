@@ -486,6 +486,11 @@ nav {
 		border: 1px solid gray;
 	}
 	.aboutImg {
+		height: 50px;
+		width: 50px;
+		margin: auto;
+		display: block;
+		border: none;
 		
 	}
 }
@@ -497,19 +502,13 @@ nav {
 	}
 }
 
-.activeImg, #nerd1 {
-	
-		background-image: url("nerd2.png");
+.aboutCat>#nerd1>div {
+	background-image: url("nerd1.png"); 
 }
 
-// #nerd1 {
-// 	height: 50px;
-// 	width: 50px;
-//     margin: auto;
-// 	display: block;
-// 	background-image: url("nerd1.png");
-// }
-
+.aboutCat>#nerd1>div.activeImg {
+		background-image: url("nerd2.png");
+}
 
 
 @media only screen and (max-width: 500px) {
