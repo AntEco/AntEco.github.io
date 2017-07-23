@@ -510,6 +510,14 @@ nav {
 		background-image: url("nerd2.png");
 }
 
+.aboutCat>#nerd2>div {
+	background-image: url("ow.png"); 
+}
+
+.aboutCat>#nerd2>div.activeImg {
+		background-image: url("ow2.png");
+}
+
 
 @media only screen and (max-width: 500px) {
 	
