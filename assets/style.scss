@@ -441,40 +441,13 @@ nav {
 	margin-bottom: 15px;
 }
 
-// #ow {
-// 	display: flex;
-// 	padding: 100px 0 0 100px;
-// 	height: 100px;
-// 	position: relative;
-// 	// display: inline-block;
-//     img {
-//     	height: 100px;
-//     	width: 100px;
-//     }
-//     #textContainer {
-// 		padding-left: 120px;
-// 		height: 100px;
-// 		position: absolute;
-// 		flex-direction: column;
-//   		justify-content: center;
-
-//     }
-//     .aboutTitle {
-// 		text-decoration: underline;
-// 		font-weight: bold;
-// 		font-size: 20px;
-// 		flex-direction: column;
-//   		justify-content: center;
-// 	}
-// 	.aboutDescribe {
-// 		padding-top: 2px;
-// 	}
-// }
-
 //make active class with js
 //make a couple divs with their own images
 //image transparent on active
 //color change on image container
+#aboutContent {
+	background-color: white;
+}
 
 .aboutCat {
 	padding: 50px 0 0 50px;
@@ -483,7 +456,7 @@ nav {
 		height: 100px;
 		border-radius: 50%;
 		background-color: white;
-		border: 1px solid gray;
+		border: 2px solid #1DB5BD;
 	}
 	.aboutImg {
 		height: 50px;
@@ -497,7 +470,7 @@ nav {
 
 .aboutActive {
 	.aboutImgContainer{
-	background-color: green;
+	background-color: #1DB5BD;
 	border: none;
 	}
 }
@@ -508,14 +481,6 @@ nav {
 
 .aboutCat>#nerd1>div.activeImg {
 		background-image: url("nerd2.png");
-}
-
-.aboutCat>#nerd2>div {
-	background-image: url("ow.png"); 
-}
-
-.aboutCat>#nerd2>div.activeImg {
-		background-image: url("ow2.png");
 }
 
 

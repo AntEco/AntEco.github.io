@@ -374,6 +374,9 @@ nav {
   text-align: center;
   margin-bottom: 15px; }
 
+#aboutContent {
+  background-color: white; }
+
 .aboutCat {
   padding: 50px 0 0 50px; }
   .aboutCat .aboutImgContainer {
@@ -381,7 +384,7 @@ nav {
     height: 100px;
     border-radius: 50%;
     background-color: white;
-    border: 1px solid gray; }
+    border: 2px solid #1DB5BD; }
   .aboutCat .aboutImg {
     height: 50px;
     width: 50px;
@@ -390,7 +393,7 @@ nav {
     border: none; }
 
 .aboutActive .aboutImgContainer {
-  background-color: green;
+  background-color: #1DB5BD;
   border: none; }
 
 .aboutCat > #nerd1 > div {
@@ -398,12 +401,6 @@ nav {
 
 .aboutCat > #nerd1 > div.activeImg {
   background-image: url("nerd2.png"); }
-
-.aboutCat > #nerd2 > div {
-  background-image: url("ow.png"); }
-
-.aboutCat > #nerd2 > div.activeImg {
-  background-image: url("ow2.png"); }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {
