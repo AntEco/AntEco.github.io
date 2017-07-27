@@ -376,15 +376,23 @@ nav {
 
 #aboutContent {
   background-color: white; }
+  #aboutContent ul {
+    padding-top: 50px; }
+  #aboutContent li {
+    list-style: none;
+    clear: left; }
 
 .aboutCat {
-  padding: 50px 0 0 50px; }
+  padding: 10px 0 0 50px; }
   .aboutCat .aboutImgContainer {
     width: 100px;
     height: 100px;
     border-radius: 50%;
     background-color: white;
-    border: 2px solid #1DB5BD; }
+    border: 2px solid gray;
+    position: relative;
+    display: block;
+    float: left; }
   .aboutCat .aboutImg {
     height: 50px;
     width: 50px;
@@ -394,13 +402,33 @@ nav {
 
 .aboutActive .aboutImgContainer {
   background-color: #1DB5BD;
-  border: none; }
+  border: 2px solid #1DB5BD; }
+.aboutActive .aboutCatTitle {
+  font-size: 25px;
+  font-weight: bold;
+  color: black; }
 
 .aboutCat > #nerd1 > div {
   background-image: url("nerd1.png"); }
 
 .aboutCat > #nerd1 > div.activeImg {
   background-image: url("nerd2.png"); }
+
+.aboutCatInfo {
+  padding-left: 25px;
+  width: 300px;
+  display: block;
+  float: left;
+  position: relative;
+  height: 100px;
+  margin-top: 25px; }
+
+.aboutCatTitle {
+  font-size: 20px;
+  color: gray; }
+
+.aboutCatDescribe {
+  padding-top: 5px; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {
