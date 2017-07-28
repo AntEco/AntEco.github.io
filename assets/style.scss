@@ -491,24 +491,27 @@ nav {
 		font-weight: bold;
 		color: black;
 	}
+	.aboutCatDescribe {
+		color: black;
+	}
 	.activeImg {
 		height: 50px;
 		width: 50px;
 	}
 }
 
-#nerd1Img, #bballImg, #brainImg, #coffeeImg {
+#nerd1Img, #bballImg, #brainImg, #coffeeImg, #movieImg {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);
 }
 
 .aboutCat>#nerd1>div {
-	content: url("nerd1.png"); 
+	content: url("nerdemoji.png"); 
 }
 
 .aboutCat>#nerd1>div.activeImg {
-	content: url("nerd2.png");
+	content: url("nerdemoji2.png");
 }
 
 .aboutCat>#bball>div {
@@ -533,6 +536,14 @@ nav {
 
 .aboutCat>#coffee>div.activeImg {
 	content: url("coffee2.png");
+}
+
+.aboutCat>#movie>div {
+	content: url("movie2.png");
+}
+
+.aboutCat>#movie>div.activeImg {
+	content: url("movie.png");
 }
 
 .aboutCatInfo {
