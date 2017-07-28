@@ -142,6 +142,18 @@ $("#bball").click(function(){
     bballImg.animate({height: "50px", width: "50px"}, 200)
 });
 
+$("#brain").click(function(){
+    var brainImg = $("#brainImg");
+    brainImg.animate({height: "35px", width: "35px"}, 200)
+    brainImg.animate({height: "50px", width: "50px"}, 200)
+});
+
+$("#coffee").click(function(){
+    var coffeeImg = $("#coffeeImg");
+    coffeeImg.animate({height: "35px", width: "35px"}, 200)
+    coffeeImg.animate({height: "50px", width: "50px"}, 200)
+});
+
 $(document).on("scroll", onScroll);
  
         $('a[href^="#"]').on('click', function (e) {

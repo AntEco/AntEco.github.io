@@ -375,21 +375,23 @@ nav {
   margin-bottom: 15px; }
 
 #aboutContent {
-  background-color: white; }
+  background-color: white;
+  width: 95%;
+  margin: 0 auto; }
   #aboutContent ul {
-    padding-top: 50px; }
+    padding: 50px 0 0 50px; }
   #aboutContent li {
     list-style: none;
     clear: left; }
 
 .aboutCat {
-  padding: 10px 0 0 50px; }
+  padding-top: 10px; }
   .aboutCat .aboutImgContainer {
-    width: 100px;
-    height: 100px;
+    width: 75px;
+    height: 75px;
     border-radius: 50%;
     background-color: white;
-    border: 2px solid gray;
+    border: 1px solid gray;
     position: relative;
     display: block;
     float: left; }
@@ -402,7 +404,7 @@ nav {
 
 .aboutActive .aboutImgContainer {
   background-color: #1DB5BD;
-  border: 2px solid #1DB5BD; }
+  border: 1px solid #1DB5BD; }
 .aboutActive .aboutCatTitle {
   font-size: 25px;
   font-weight: bold;
@@ -411,21 +413,10 @@ nav {
   height: 50px;
   width: 50px; }
 
-#nerd1Img {
+#nerd1Img, #bballImg, #brainImg, #coffeeImg {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
-  #nerd1Img img {
-    max-height: 100%;
-    max-width: 100%; }
-
-#bballImg {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%); }
-  #bballImg img {
-    max-height: 100%;
-    max-width: 100%; }
 
 .aboutCat > #nerd1 > div {
   content: url("nerd1.png"); }
@@ -434,26 +425,38 @@ nav {
   content: url("nerd2.png"); }
 
 .aboutCat > #bball > div {
-  content: url("basketballcopy.png"); }
+  content: url("basketball.png"); }
 
 .aboutCat > #bball > div.activeImg {
-  content: url("basketball3.png"); }
+  content: url("basketball2.png"); }
+
+.aboutCat > #brain > div {
+  content: url("brain2.png"); }
+
+.aboutCat > #brain > div.activeImg {
+  content: url("brain.png"); }
+
+.aboutCat > #coffee > div {
+  content: url("coffee.png"); }
+
+.aboutCat > #coffee > div.activeImg {
+  content: url("coffee2.png"); }
 
 .aboutCatInfo {
   padding-left: 25px;
-  width: 300px;
+  width: 50vw;
   display: block;
   float: left;
   position: relative;
-  height: 100px;
-  margin-top: 25px; }
+  height: 75px;
+  padding-top: 15px; }
 
 .aboutCatTitle {
-  font-size: 20px;
-  color: gray; }
+  font-size: 20px; }
 
 .aboutCatDescribe {
-  padding-top: 5px; }
+  padding-top: 5px;
+  color: gray; }
 
 @media only screen and (max-width: 500px) {
   #helloContent1 {
