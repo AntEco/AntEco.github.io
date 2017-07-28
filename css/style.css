@@ -394,8 +394,8 @@ nav {
     display: block;
     float: left; }
   .aboutCat .aboutImg {
-    height: 50px;
-    width: 50px;
+    max-height: 50px;
+    max-width: 50px;
     margin: auto;
     display: block;
     border: none; }
@@ -407,12 +407,29 @@ nav {
   font-size: 25px;
   font-weight: bold;
   color: black; }
+.aboutActive .activeImg {
+  height: 50px;
+  width: 50px; }
+
+#nerd1Img img {
+  max-height: 100%;
+  max-width: 100%; }
+
+#bballImg img {
+  max-height: 100%;
+  max-width: 100%; }
 
 .aboutCat > #nerd1 > div {
   background-image: url("nerd1.png"); }
 
 .aboutCat > #nerd1 > div.activeImg {
   background-image: url("nerd2.png"); }
+
+.aboutCat > #bball > div {
+  content: url("basketballcopy.png"); }
+
+.aboutCat > #bball > div.activeImg {
+  content: url("basketball3.png"); }
 
 .aboutCatInfo {
   padding-left: 25px;
