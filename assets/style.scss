@@ -470,8 +470,8 @@ nav {
 		// clear: both;
 	}
 	.aboutImg {
-		max-height: 50px;
-		max-width: 50px;
+		height: 50px;
+		width: 50px;
 		margin: auto;
 		display: block;
 		border: none;
@@ -496,6 +496,9 @@ nav {
 }
 
 #nerd1Img {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
 	img{
 	max-height: 100%;
 	max-width: 100%;
@@ -503,18 +506,22 @@ nav {
 }
 
 #bballImg {
+	position: relative;
+  	top: 50%;
+  	transform: translateY(-50%);
+	
 	img{
-	max-height: 100%;
-	max-width: 100%;
+		max-height: 100%;
+		max-width: 100%;
 	}
 }
 
 .aboutCat>#nerd1>div {
-	background-image: url("nerd1.png"); 
+	content: url("nerd1.png"); 
 }
 
 .aboutCat>#nerd1>div.activeImg {
-		background-image: url("nerd2.png");
+	content: url("nerd2.png");
 }
 
 .aboutCat>#bball>div {

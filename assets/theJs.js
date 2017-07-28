@@ -130,6 +130,12 @@ $('.aboutCat').click(function(){
     $(this).find($(".aboutImg")).addClass("activeImg");
 });
 
+$("#nerd1").click(function(){
+    var nerdImg = $("#nerd1Img");
+    nerdImg.animate({height: "35px", width: "35px"}, 200)
+    nerdImg.animate({height: "50px", width: "50px"}, 200)
+});
+
 $("#bball").click(function(){
     var bballImg = $("#bballImg");
     bballImg.animate({height: "35px", width: "35px"}, 200)
