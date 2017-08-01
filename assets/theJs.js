@@ -37,7 +37,7 @@ $(function() {
   });
 
 $('#helloType').typeIt({
-    strings: ["great looking sites.", "web apps.", "web based video games."],
+    strings: ["great looking sites.", "web apps.", "video games.", "your next project?"],
      speed: 110,
      lifeLike: true,
      breakLines: false,

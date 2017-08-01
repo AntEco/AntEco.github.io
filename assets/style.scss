@@ -171,7 +171,7 @@ nav {
 }
 
 #about {
-	margin-top: -5px;
+	// margin-top: -5px;
 	height: 100vh;
 	font-family: 'Roboto', sans-serif;
 	//background-color: grey;
@@ -441,18 +441,12 @@ nav {
 	margin-bottom: 15px;
 }
 
-//make active class with js
-//make a couple divs with their own images
-//image transparent on active
-//color change on image container
 #aboutContent {
 	background-color: white;
 	width: 95%;
 	margin: 0 auto;
-
 	ul {
-		padding: 75px 0 0 50px;
-		
+		padding-top: 75px;	
 	}
 	li {
 		list-style: none;
@@ -461,7 +455,7 @@ nav {
 }
 
 .aboutCat {
-	padding-top: 10px;
+	padding: 10px 0 0 50px;
 	.aboutImgContainer {
 		width: 75px;
 		height: 75px;
