@@ -449,8 +449,10 @@ nav {
 	background-color: white;
 	width: 95%;
 	margin: 0 auto;
+
 	ul {
-		padding: 50px 0 0 50px;
+		padding: 75px 0 0 50px;
+		
 	}
 	li {
 		list-style: none;
@@ -500,7 +502,7 @@ nav {
 	}
 }
 
-#nerd1Img, #bballImg, #brainImg, #coffeeImg, #movieImg {
+.aboutImg {
 	position: relative;
   	top: 50%;
   	transform: translateY(-50%);

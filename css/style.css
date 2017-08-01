@@ -379,7 +379,7 @@ nav {
   width: 95%;
   margin: 0 auto; }
   #aboutContent ul {
-    padding: 50px 0 0 50px; }
+    padding: 75px 0 0 50px; }
   #aboutContent li {
     list-style: none;
     clear: left; }
@@ -415,7 +415,7 @@ nav {
   height: 50px;
   width: 50px; }
 
-#nerd1Img, #bballImg, #brainImg, #coffeeImg, #movieImg {
+.aboutImg {
   position: relative;
   top: 50%;
   transform: translateY(-50%); }
