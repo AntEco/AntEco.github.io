@@ -154,6 +154,12 @@ $("#coffee").click(function(){
     coffeeImg.animate({height: "50px", width: "50px"}, 200)
 });
 
+$("#movie").click(function(){
+    var movieImg = $("#movieImg");
+    movieImg.animate({height: "35px", width: "35px"}, 200)
+    movieImg.animate({height: "50px", width: "50px"}, 200)
+});
+
 $(document).on("scroll", onScroll);
  
         $('a[href^="#"]').on('click', function (e) {
