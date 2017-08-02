@@ -127,7 +127,7 @@ nav {
   background-size: cover; }
 
 #typeContainer {
-  padding-top: 100px;
+  padding-top: 5%;
   text-align: center;
   width: 100%;
   font-size: 3.3em;
@@ -465,24 +465,29 @@ nav {
   padding-top: 5px;
   color: gray; }
 
-@media only screen and (max-width: 500px) {
-  #helloContent1 {
-    font-size: 1.5em;
-    color: white;
-    position: absolute;
-    text-align: center;
-    display: none;
-    margin: 0 auto;
-    width: 100%; }
+.aboutCatDescribe2 {
+  display: none; }
 
-  #helloContent2 {
-    font-size: 1.5em;
-    color: green;
-    position: absolute;
-    text-align: center;
-    display: none;
+@media screen and (max-width: 900px) {
+  #about #aboutSidebar {
+    display: none; }
+  #about .aboutCat {
+    padding-left: 25px; }
+  #about .aboutCatDescribe {
+    display: none; }
+  #about .aboutCatDescribe2 {
+    display: block;
+    clear: both; } }
+@media only screen and (max-width: 700px) {
+  #skillsSidebar {
+    display: none; }
+
+  #skillsContent {
+    width: 100vw; }
+
+  #skillsChart {
     margin: 0 auto;
-    width: 100%;
-    padding-top: 40px; } }
+    max-width: 100vw;
+    max-height: 100%; } }
 
 /*# sourceMappingURL=style.css.map */
