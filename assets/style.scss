@@ -123,7 +123,7 @@ nav {
 	background-color: gray;
 	float: right;
 	height: 100vh;
-	border-bottom: 1px solid black;
+	// border-bottom: 1px solid black;
 	overflow-y: auto;
 }
 
@@ -134,7 +134,7 @@ nav {
 	width: 70vw;
 	background-color: lightgray;
 	height: 100vh;
-	border-bottom: 1px solid black;
+	// border-bottom: 1px solid black;
 
 }
 
@@ -146,6 +146,7 @@ nav {
 	width: 100vw;
 	background-image: url("laptop2.jpg");
 	background-size: cover;
+	border-bottom: 1px solid black;
 }
 
 #typeContainer {
@@ -184,6 +185,11 @@ nav {
 	padding: 60px 15px 0 5px;
 	text-align: center;
 	font-size: 17px;
+}
+
+#skills {
+	border-top: 1px solid black;
+	border-bottom: 1px solid black;
 }
 
 #skillsSidebar {
@@ -390,6 +396,7 @@ nav {
 	// height: 100%;
 	font-family: 'Roboto', sans-serif;
 	position: relative;
+	border-top: 1px solid black;
 }
 
 #contactTextbox {
@@ -567,7 +574,19 @@ nav {
 }
 
 @media screen and (max-width: 900px) {
-#about {	
+#about {
+	height: 100%;
+	display: block;
+	overflow: auto;
+
+	#aboutContent>.mainContent {
+		border-bottom: none;
+	}
+
+	ul {
+		padding-bottom: 10px;
+	}
+
 	#aboutSidebar {
 		display: none;
 	}
@@ -578,6 +597,15 @@ nav {
 
 	.aboutCatDescribe {
 		display: none;
+	}
+
+	.aboutCatTitle {
+		height: 50px;
+		padding: none;
+		position: relative;
+  		top: 50%;
+  		transform: translateY(-50%);
+  		font-size: 20px;
 	}
 
 	.aboutCatDescribe2 {
