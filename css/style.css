@@ -477,15 +477,15 @@ nav {
 
 @media screen and (max-width: 900px) {
   #about {
-    height: 1%;
-    display: block;
-    overflow: auto; }
+    height: auto;
+    display: block; }
     #about #aboutContent > .mainContent {
       border-bottom: none; }
     #about #aboutSidebar {
       display: none; }
     #about ul {
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      height: 100%; }
     #about .aboutCat {
       padding-left: 25px; }
     #about .aboutCatDescribe {
@@ -499,14 +499,17 @@ nav {
       font-size: 20px; }
     #about .aboutCatDescribe2 {
       display: block;
-      clear: both; } }
+      clear: both; }
+
+  #skills {
+    clear: both; } }
 @media only screen and (max-width: 700px) {
   #about > ul {
     padding-bottom: 0; }
 
   #skills {
     border: none;
-    height: 400px; }
+    height: 450px; }
 
   #skillsSidebar {
     display: none; }
@@ -523,9 +526,11 @@ nav {
   #chartMobileTitle {
     display: block;
     font-family: 'Roboto', sans-serif;
-    margin: 0 auto;
-    font-size: 15px;
-    font-weight: bold; }
+    width: 100%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    padding-bottom: -20px; }
 
   #typeContainer {
     padding-top: 15%;

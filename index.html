@@ -218,7 +218,7 @@
 		</div>
 
 		<div id="skillsContent" class="mainContent">
-			<p id="chartMobileTitle">Some of my skills</p>
+			<!-- <p id="chartMobileTitle">Some Of My Skills</p> -->
 			<canvas id="skillsChart"><script>
 				var ctx = document.getElementById("skillsChart");
 				var myChart = new Chart(ctx, {
@@ -237,7 +237,16 @@
 			            labels: {
 			                fontColor: 'rgb(0, 0, 0)',
 			                fontSize: 15
-			            }
+			            },
+			        },
+			        title: {
+			        	display: true,
+			        	fontSize: 25,
+			        	fontStyle: 'bold',
+			        	fontColor: 'rgb(0, 0, 0)',
+			        	text: 'Some Of My Skills',
+			        	padding: 0,
+			        	fontFamily: 'Arial',
 			        },
 			        startAngle: 5,
 			        responsive: true,
