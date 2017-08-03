@@ -505,15 +505,15 @@ nav {
     padding-bottom: 0; }
 
   #skills {
-    border: none; }
+    border: none;
+    height: 400px; }
 
   #skillsSidebar {
     display: none; }
 
   #skillsContent {
-    width: 400px;
-    background-color: white;
-    height: 400px; }
+    width: 100vw;
+    background-color: white; }
 
   #skillsChart {
     margin: 0 auto;
