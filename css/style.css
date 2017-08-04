@@ -486,8 +486,7 @@ nav {
     #about #aboutSidebar {
       display: none; }
     #about ul {
-      padding-bottom: 25px;
-      height: 100%; }
+      padding-bottom: 25px; }
     #about .aboutCat {
       padding-left: 25px; }
     #about .aboutCatDescribe {
