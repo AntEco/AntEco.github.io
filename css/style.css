@@ -344,7 +344,8 @@ nav {
   height: 100vh;
   font-family: 'Roboto', sans-serif;
   position: relative;
-  border-top: 1px solid black; }
+  border-top: 1px solid black;
+  overflow: auto; }
 
 #contactTextbox {
   width: 100%;
@@ -478,7 +479,8 @@ nav {
 @media screen and (max-width: 900px) {
   #about {
     height: auto;
-    display: block; }
+    display: block;
+    overflow: auto; }
     #about #aboutContent > .mainContent {
       border-bottom: none; }
     #about #aboutSidebar {
