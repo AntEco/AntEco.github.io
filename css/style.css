@@ -509,7 +509,8 @@ nav {
 
   #skills {
     border: none;
-    height: 450px; }
+    height: 450px;
+    clear: both; }
 
   #skillsSidebar {
     display: none; }
