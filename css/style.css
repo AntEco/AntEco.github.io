@@ -483,7 +483,8 @@ nav {
     #about #aboutSidebar {
       display: none; }
     #about ul {
-      padding-bottom: 25px; }
+      padding-bottom: 25px;
+      height: 100%; }
     #about .aboutCat {
       padding-left: 25px; }
     #about .aboutCatDescribe {
