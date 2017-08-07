@@ -506,16 +506,18 @@ nav {
     clear: both; } }
 @media only screen and (max-width: 700px) {
   #about {
-    height: 750px; }
+    height: 850px; }
 
   #about > ul {
     padding-bottom: 0;
     float: left; }
 
   #skills {
+    display: block;
     border: none;
-    height: 450px;
-    clear: both; }
+    height: 400px;
+    clear: both;
+    padding-bottom: 25px; }
 
   #skillsSidebar {
     display: none; }
@@ -545,8 +547,19 @@ nav {
     font-size: 2.3em;
     font-weight: bold;
     color: white; } }
-@media only screen and (max-width: 700px) and (max-width: 700px) {
+@media only screen and (max-width: 325px) {
   #about {
-    height: 850px; } }
+    height: 900px; } }
+#skills {
+  height: 375px; }
+
+@media only screen and (max-height: 375px) and (max-width: 667px) {
+  #about {
+    height: 750px; }
+
+  #skillsContent {
+    height: 100%;
+    width: 50vw;
+    margin: 0 auto; } }
 
 /*# sourceMappingURL=style.css.map */
