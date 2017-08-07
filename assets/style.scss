@@ -210,10 +210,6 @@ nav {
 		background-color: rgb(187, 188, 191);
 }
 
-#chartMobileTitle {
-	display: none;
-}
-
 #skillsChart {
 	margin: 0 auto;
 	max-width: 45vw;
@@ -621,14 +617,15 @@ nav {
 
 #skills {
 	clear: both;
+	padding-bottom: 25px;
 }
 
-}
+
 
 @media only screen and (max-width: 700px) {
 
 #about {
-	height: 850px;
+	height: 825px;
 }
 #about>ul {
 		padding-bottom: 0;
@@ -636,11 +633,9 @@ nav {
 	}
 
 #skills {
-	display: block;
 	border: none;
-	height: 400px;
+	height: 350px;
 	clear: both;
-	padding-bottom: 25px;
 }
 	
 #skillsSidebar {
@@ -704,5 +699,5 @@ nav {
 }
 }
 
-
+}
 

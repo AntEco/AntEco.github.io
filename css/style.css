@@ -181,9 +181,6 @@ nav {
   padding-top: 60px;
   background-color: #bbbcbf; }
 
-#chartMobileTitle {
-  display: none; }
-
 #skillsChart {
   margin: 0 auto;
   max-width: 45vw;
@@ -503,21 +500,20 @@ nav {
       clear: both; }
 
   #skills {
-    clear: both; } }
-@media only screen and (max-width: 700px) {
+    clear: both;
+    padding-bottom: 25px; } }
+@media only screen and (max-width: 900px) and (max-width: 700px) {
   #about {
-    height: 850px; }
+    height: 825px; }
 
   #about > ul {
     padding-bottom: 0;
     float: left; }
 
   #skills {
-    display: block;
     border: none;
-    height: 400px;
-    clear: both;
-    padding-bottom: 25px; }
+    height: 350px;
+    clear: both; }
 
   #skillsSidebar {
     display: none; }
@@ -547,13 +543,13 @@ nav {
     font-size: 2.3em;
     font-weight: bold;
     color: white; } }
-@media only screen and (max-width: 325px) {
+@media only screen and (max-width: 900px) and (max-width: 325px) {
   #about {
     height: 900px; } }
-#skills {
-  height: 375px; }
-
-@media only screen and (max-height: 375px) and (max-width: 667px) {
+@media screen and (max-width: 900px) {
+  #skills {
+    height: 375px; } }
+@media only screen and (max-width: 900px) and (max-height: 375px) and (max-width: 667px) {
   #about {
     height: 750px; }
 
