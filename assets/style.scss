@@ -579,9 +579,10 @@ nav {
 
 @media screen and (max-width: 900px) {
 #about {
-	height: auto;
+	height: 750px;
 	display: block;
-	overflow: auto;
+	float: left;
+	// overflow: auto;
 
 	#aboutContent>.mainContent {
 		border-bottom: none;
@@ -626,8 +627,12 @@ nav {
 
 @media only screen and (max-width: 700px) {
 
+#about {
+	height: 750px;
+}
 #about>ul {
 		padding-bottom: 0;
+		float: left;
 	}
 
 #skills {
@@ -671,4 +676,12 @@ nav {
 	font-weight: bold;
 	color: white;
 }
+
+@media only screen and (max-width: 700px) {
+#about {
+	height: 850px;
 }
+}
+}
+
+

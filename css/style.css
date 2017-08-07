@@ -478,9 +478,9 @@ nav {
 
 @media screen and (max-width: 900px) {
   #about {
-    height: auto;
+    height: 750px;
     display: block;
-    overflow: auto; }
+    float: left; }
     #about #aboutContent > .mainContent {
       border-bottom: none; }
     #about #aboutSidebar {
@@ -505,8 +505,12 @@ nav {
   #skills {
     clear: both; } }
 @media only screen and (max-width: 700px) {
+  #about {
+    height: 750px; }
+
   #about > ul {
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    float: left; }
 
   #skills {
     border: none;
@@ -541,5 +545,8 @@ nav {
     font-size: 2.3em;
     font-weight: bold;
     color: white; } }
+@media only screen and (max-width: 700px) and (max-width: 700px) {
+  #about {
+    height: 850px; } }
 
 /*# sourceMappingURL=style.css.map */
