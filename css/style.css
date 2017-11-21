@@ -515,7 +515,7 @@ nav {
     clear: both;
     padding-bottom: 25px;
     height: 100%; } }
-@media only screen and (max-width: 900px) and (max-width: 700px) {
+@media only screen and (max-width: 700px) {
   #about {
     height: 825px; }
 
@@ -547,15 +547,17 @@ nav {
     width: 100%;
     font-size: 2.3em;
     font-weight: bold;
-    color: white; } }
+    color: white; }
 
-@media only screen and (max-width: 900px) and (max-width: 325px) {
+  #projects {
+    clear: both; } }
+@media only screen and (max-width: 325px) {
   #about {
-    height: 900px; } }
-@media screen and (max-width: 900px) {
+    height: 900px; }
+
   #skills {
     height: 375px; } }
-@media only screen and (max-width: 900px) and (max-height: 375px) and (max-width: 667px) {
+@media only screen and (max-height: 375px) and (max-width: 667px) {
   #about {
     height: 750px; }
 
@@ -563,7 +565,5 @@ nav {
     height: 100%;
     width: 50vw;
     margin: 0 auto; } }
-  
 
-  #projects {
-    clear: both; }
+/*# sourceMappingURL=style.css.map */
