@@ -178,6 +178,12 @@ nav {
   overflow-y: scroll; }
 
 #skillsContent {
+  -webkit-box-sizing: border-box;
+  /* Safari/Chrome, other WebKit */
+  -moz-box-sizing: border-box;
+  /* Firefox, other Gecko */
+  box-sizing: border-box;
+  /* Opera/IE 8+ */
   padding-top: 60px;
   background-color: #bbbcbf; }
 
@@ -207,7 +213,8 @@ nav {
   cursor: pointer; }
 
 #prevArrow:hover {
-  opacity: 1; }
+  opacity: 1;
+  color: #2dbccb; }
 
 #nextArrow {
   padding: 20px;
@@ -221,7 +228,8 @@ nav {
   cursor: pointer; }
 
 #nextArrow:hover {
-  opacity: 1; }
+  opacity: 1;
+  color: #2dbccb; }
 
 .projectTitle {
   text-align: center;
@@ -355,7 +363,10 @@ nav {
 
 #contactLogos {
   padding-top: 5%;
-  height: 40vh; }
+  margin: 0 auto;
+  display: inline-block;
+  height: 40vh;
+  width: 100%; }
   #contactLogos ul {
     margin: 0;
     padding: 0;
@@ -363,7 +374,7 @@ nav {
   #contactLogos li {
     list-style: none; }
   #contactLogos .contactItem {
-    margin: 0 10px;
+    margin: 10px 10px;
     display: inline-block;
     max-width: 50%; }
     #contactLogos .contactItem img {
@@ -376,9 +387,9 @@ nav {
 
 #copyright {
   position: absolute;
-  bottom: 0;
   width: 100vw;
   text-align: center;
+  margin-top: 70px;
   margin-bottom: 15px; }
 
 #aboutContent {
@@ -518,21 +529,13 @@ nav {
 
   #skillsContent {
     width: 100vw;
+    height: auto;
     background-color: white; }
 
   #skillsChart {
     margin: 0 auto;
     max-width: 100vw;
-    max-height: 100%; }
-
-  #chartMobileTitle {
-    display: block;
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
-    text-align: center;
-    font-size: 25px;
-    font-weight: bold;
-    padding-bottom: -20px; }
+    float: left; }
 
   #typeContainer {
     padding-top: 15%;
@@ -540,6 +543,9 @@ nav {
     width: 100%;
     font-size: 2.3em;
     font-weight: bold;
-    color: white; } }
+    color: white; }
+
+  #projects {
+    clear: both; } }
 
 /*# sourceMappingURL=style.css.map */
