@@ -121,7 +121,7 @@ nav {
   position: relative;
   height: 100vh;
   width: 100vw;
-  background-image: url("laptop2.jpg");
+  background-image: url("laptop.jpg");
   background-size: cover;
   border-bottom: 1px solid black; }
 
@@ -157,7 +157,7 @@ nav {
   /* Opera/IE 8+ */
   padding: 60px 15px 0 5px;
   text-align: center;
-  font-size: 17px; }
+  font-size: 27px; }
 
 #skills {
   border-top: 1px solid black;
